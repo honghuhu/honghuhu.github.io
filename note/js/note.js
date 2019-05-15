@@ -123,7 +123,7 @@ var subContent;
 function forEach() {
     noteHtml.innerHTML = "";
     dataBase.transaction(function (tx) {
-        tx.executeSql('SELECT * FROM note order by update_time desc', [], function (tx, results) {
+        tx.executeSql('SELECT * FROM note', [], function (tx, results) {
             var len = results.rows.length, i;
             for (i = 0; i < len; i++) {
                 subContent = results.rows.item(i).content.replace(/\r\n/g, '<br/>').replace(/\n/g, "<br/>");
