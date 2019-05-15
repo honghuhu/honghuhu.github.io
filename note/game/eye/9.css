@@ -1,0 +1,117 @@
+.main {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    background: #222222;
+    width: 320px;
+    height: 480px
+}
+
+#frame {
+    width: 320px;
+    height: 480px;
+    margin: 0;
+    padding: 0;
+    border-top: solid 1px #222222
+}
+
+#canvas {
+    margin: 100px 0 0 0;
+    width: 320px;
+    height: 240px;
+}
+
+#logo {
+    width: 260px;
+    height: 40px;
+    margin: 210px 0 0 30px;
+    background: url("2000-1.png") /*tpa=http://t2.qpic.cn/mblogpic/20aafbe38b6ba434322c/2000*/ no-repeat 0 0
+}
+
+#playButton {
+    width: 145px;
+    height: 60px;
+    margin: 200px 0 0 87px;
+    background: transparent url("2000-1.png") /*tpa=http://t2.qpic.cn/mblogpic/20aafbe38b6ba434322c/2000*/ no-repeat 0 -40px
+}
+
+#playButton:hover {
+    cursor: pointer
+}
+
+#level, #lives {
+    font-size: 18px;
+    font-family: Helvetica, Arial, Verdana, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    color: #fff
+}
+
+#level {
+    text-align: left;
+    position: absolute;
+    padding: 5px
+}
+
+#lives {
+    padding: 5px;
+    text-align: right;
+    position: absolute;
+    width: 310px
+}
+
+#hearts {
+    float: right;
+    margin-left: 10px
+}
+
+.heart {
+    background: url("2000-1.png") /*tpa=http://t2.qpic.cn/mblogpic/20aafbe38b6ba434322c/2000*/ no-repeat -216px -46px;
+    width: 28px;
+    height: 24px;
+    display: block;
+    float: left
+}
+
+#livesLabel {
+    float: right
+}
+
+#msg {
+    font-size: 18px;
+    font-family: Helvetica, Arial, Verdana, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+    color: #fff;
+    width: 100%;
+    text-align: center
+}
+
+#b1, #b2, #b3 {
+    position: absolute;
+    width: 88px;
+    height: 100px;
+    background: transparent;
+    display: none;
+}
+
+#b1 {
+    margin: 140px 0 0 16px
+}
+
+#b2 {
+    margin: 140px 0 0 115px
+}
+
+#b3 {
+    margin: 140px 0 0 216px
+}
+
+#b1:hover, #b2:hover, #b3:hover {
+    cursor: pointer
+}
+
+#play68box {
+    width: 190px;
+    font-size: 12px;
+    line-height: 15px;
+    right: -172px;
+    top: 35%;
+    position: fixed;
+}

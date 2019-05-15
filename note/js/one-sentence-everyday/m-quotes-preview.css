@@ -1,0 +1,165 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0
+}
+
+body .share-preview {
+    display: none
+}
+
+.quote-preview {
+    font-family: Lantinghei SC Extralight, Lantinghei SC, Arial, Hiragino Sans GB, Microsoft Yahei, \\9ED1\4F53, sans-serif;
+    height: 100%;
+    color: hsl(0, 0%, 93%);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+    transition: opacity 1s linear 0s;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.quote-preview .bottom-bg {
+    height: 350px;
+    left: 0;
+    opacity: .69;
+    background-image: linear-gradient(180deg, transparent, #000)
+}
+
+.quote-preview .bottom-bg, .quote-preview .quote {
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.quote-preview .quote .date-show {
+    height: 3.5rem;
+    margin: 1rem 1rem 0;
+    color: #38c6aa
+}
+
+.quote-preview .quote .date-show .day {
+    font-size: 3.125rem;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.quote-preview .quote .date-show .month, .quote-preview .quote .date-show .year {
+    font-size: 1.25rem;
+    display: inline-block
+}
+
+.quote-preview .quote .content {
+    margin: 1rem;
+    line-height: 1.25;
+    font-size: 16px
+}
+
+.quote-preview .quote .translation {
+    line-height: 1.25;
+    margin: 0 1rem 1rem
+}
+
+.quote-preview .quote .author p {
+    float: right;
+    margin: 0 1rem;
+    margin-bottom: 1rem
+}
+
+.quote-preview .quote .author p:before {
+    content: "\2014";
+    margin: 0 .5em
+}
+
+.quote-preview .mp-bottom-bg {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
+    background-color: #a9a9a9
+}
+
+.quote-preview .mp-bottom {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.quote-preview .mp-bottom .left {
+    width: 110px;
+    height: 57px;
+    margin-left: 20px;
+    color: #ccc;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.quote-preview .mp-bottom .left .date {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline
+}
+
+.quote-preview .mp-bottom .left .date .day {
+    font-family: HelveticaNeue-Light;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .2)
+}
+
+.quote-preview .mp-bottom .left .date .month, .quote-preview .mp-bottom .left .date .year {
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .2)
+}
+
+.quote-preview .mp-bottom .left .title {
+    font-family: PingFangSC;
+    font-size: 14px;
+    text-align: left;
+    color: #ccc
+}
+
+.quote-preview .mp-bottom .right {
+    width: 57px;
+    height: 57px;
+    margin-right: 20px
+}
+
+.quote-preview .mp-bottom .right .mp-logo {
+    width: 57px;
+    height: 57px
+}
+
+.quote-preview .logo {
+    position: absolute;
+    width: 70px;
+    right: 18px;
+    top: 17px
+}
+
+.quote-preview .background-banner .quote {
+    background-color: rgba(63, 81, 181, 0.06);
+}
+
+.quote-preview .background-banner {
+    height: 100%;
+    width: 100%
+}

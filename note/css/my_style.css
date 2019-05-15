@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    background-attachment: fixed;  /*不随着滚动条滚动*/
+}
+/* go top */
+.goTop {
+    position: fixed;
+    top: 80%;
+    right: 20px;
+    z-index: 100;
+}
+
+.goTop a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #ff587f;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.goTop a:hover {
+    opacity: 1;
+}
+
+/* addNote */
+.addNote {
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    z-index: 100;
+}
+
+.addNote a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #ff587f;
+    padding: 6px 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.addNote a:hover {
+    opacity: 1;
+}
+
+/*GO HOME*/
+.gohome {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.gohome a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #4192ff;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.gohome a:hover {
+    opacity: 1;
+}
+
+/*全屏*/
+.fullScreen {
+    position: fixed;
+    top: 70%;
+    right: 20px;
+    z-index: 100;
+}
+
+.fullScreen a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #4192ff;
+    padding: 6px 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.fullScreen a:hover {
+    opacity: 1;
+}
+
+.notes div{
+    overflow: hidden;
+}

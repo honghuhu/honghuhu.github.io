@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    background-attachment: fixed;  /*不随着滚动条滚动*/
+}
+/*body {
+    background-attachment: fixed;
+    background-image: url(https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+}*/

@@ -1,0 +1,44 @@
+#tagCloud {
+    position: relative;
+    width: auto;
+    height: 450px;
+    margin: 20px auto 0;
+}
+
+#tagCloud a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Microsoft YaHei;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+#tagCloud a:hover {
+    border: 1px solid #000000;
+    background: #ff3f27;
+}
+
+#tagCloud .blue {
+    color: blue;
+}
+
+#tagCloud .red {
+    color: red;
+}
+
+#tagCloud .yellow {
+    color: yellow;
+}
+
+p {
+    font: 14px Microsoft YaHei;
+    text-align: center;
+    color: #ba0c0c;
+}
+
+p a {
+    color: #ba0c0c;
+}

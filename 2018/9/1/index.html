@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://upload-images.jianshu.io/upload_images/12906348-f96383d067d31480.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" rel="shortcut icon">
+    <meta name="author" content="20iD">
+    
+    <meta name="description" content="上边是一个头像">
+    
+    
+    
+    
+    
+    
+    <!--<title>用Spring Cloud和Docker构建微服务 | 用Spring Cloud和Docker构建微服务</title>-->
+    <title>
+    
+        用Spring Cloud和Docker构建微服务
+    
+    </title>
+    <link href="”https://honghuhu.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <!--<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="/js/aos.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <script src="/js/av-min-1.2.1.js"></script>
+    <script>
+      AV.init({
+        appId: 'ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz',
+        appKey: 'iI5IG8y1lDal7V4V9kBtlEf4'
+      })
+    </script>
+    
+    <!--<script src="//cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <script>AV.initialize("ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz", "iI5IG8y1lDal7V4V9kBtlEf4");</script>
+</head></html>
+<link rel="stylesheet" href="/css/base.css">
+<body>
+    <!-- 背景轮播图功能 -->
+    <!--< % - partial('_partial/slideshow.ejs') % >-->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://honghuhu.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">20iD</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class>
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://honghuhu.github.io">文章杂货铺</a>
+        >
+        <span>用Spring Cloud和Docker构建微服务</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/docker/">docker</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-09-01
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-09-01
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/docker/">docker</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <ul>
+<li>摘要: 本文讲述了 Service Discovery、Externalized Configuration、API Gateway、Service Orchestration with Docker Compose</li>
+<li>文章来源: <a href="http://www.uml.org.cn/yunjisuan/201610171.asp" target="_blank" rel="noopener">dockone</a></li>
+</ul>
+<h3 id="什么是Spring-Cloud"><a href="#什么是Spring-Cloud" class="headerlink" title="什么是Spring Cloud?"></a>什么是Spring Cloud?</h3><p>Spring Cloud 是Pivotal提供的用于简化分布式系统构建的工具集。Spring Cloud引入了云平台连接器(Cloud Connector)和服务连接器(Service Connector)的概念。云平台连接器是一个接口，需要由云平台提供者进行实现，以便库中的其他模块可以与该云平台协同工作。</p>
+<h3 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h3><p>Spring Cloud最重要的一点是它可以和Spring Boot一起工作，Spring Boot可以帮助开发者更容易地创建基于Spring的应用程序和服务。</p>
+<p>从Spring Boot项目名称中的Boot就可以看出来，Spring Boot的作用在于创建和启动新的基于Spring框架的项目。Spring Boot会选择最适合的Spring子项目和第三方开源库进行整合。大部分Spring Boot应用只需要非常少的配置就可以快速运行起来。Spring Boot包含的特性如下：</p>
+<p>创建可以独立运行的Spring应用。</p>
+<p>直接嵌入Tomcat或Jetty服务器，不需要部署WAR文件。</p>
+<p>提供推荐的基础POM文件来简化Apache Maven配置。</p>
+<p>尽可能的根据项目依赖来自动配置Spring框架。</p>
+<p>提供可以直接在生产环境中使用的功能，如性能指标、应用信息和应用健康检查。</p>
+<p>没有代码生成，也没有XML配置文件。</p>
+<p>服务发现和智能路由</p>
+<p>每一个服务都含有一个特定意义的微服务架构。当你在Spring Cloud上构建微服务架构时，这里有几个基本概念需要首先澄清下。首先，你需要要先创建Configuration Service和Discovery Service两个基础服务。如下图所示：<br><img src="https://upload-images.jianshu.io/upload_images/12906348-a81e37145c0402e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>上面的图片说明了四个微服务以及各个服务之间的依赖关系。</p>
+<p>Configuration service处于最顶端，黄色标识，而且被其它微服务所依赖。</p>
+<p>Discovery service处于最低端，蓝色标识，同时也被其它服务所依赖。</p>
+<p>绿色标识的两个微服务是我们本系列博文中用到的两个应用案例：电影和观影建议。</p>
+<h3 id="Configuration-Service"><a href="#Configuration-Service" class="headerlink" title="Configuration Service"></a>Configuration Service</h3><p>Configuration Service在微服务架构中是一个非常重要的组件。如12要素应用理论所说， 微服务应用的配置应该存储在环境中，而不是本地项目中。</p>
+<p>Configuration service(配置服务)是一个必不可少的基础组件的原因是因为它可以对所有通过点对点和检索的基础服务进行服务管理。</p>
+<p>假设我们有多个部署环境。比如我们有一个临时环境和一个生产环境，针对每个环境的配置将会是不同的。每一个configuration service 将会由一个独立的Git仓库来存放环境配置。没有其它环境能够访问到这个配置仓库，它只是提供该环境中运行的配置服务罢了。<br><img src="https://upload-images.jianshu.io/upload_images/12906348-9196f1c40550d71e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>当Configuration service启动后，它将会指向那些根据配置文件配置的路径并启动对应服务。每一个微服务通过读取自己配置文件中的具体环境来运行。在这一过程中，配置是通过版本管理来进行的内部和集中化管理，更改配置不需要重启服务。</p>
+<p>通过Spring Cloud提供的服务终端，你可以更改环境配置，并向Discovery service(发现服务)发送一个刷新信号，所有的用户都会收到新的配置通知。</p>
+<h3 id="Discovery-Service"><a href="#Discovery-Service" class="headerlink" title="Discovery Service"></a>Discovery Service</h3><p>Discovery Service(发现服务)是另一个重要的微服务架构的组件。Discovery Service管理运行在容器中的众多服务实例，而这些实例工作在集群环境下。在这些应用中，我们使用客户端的方式称之为从服务到服务。举个例子，我使用Spring Cloud Feign ，这是一个基于Restful风格的微服务提供的客户端开源项目，它是从Netflix OSS project项目中派生出来的。</p>
+<pre><code class="java">@FeignClient(&quot;movie&quot;)
+public interface MovieClient {
+    @RequestMapping(method = RequestMethod.GET, value = &quot;/movies&quot;)
+    PagedResources findAll();
+
+    @RequestMapping(method = RequestMethod.GET, value = &quot;/movies/{id}&quot;)
+    Movie findById(@RequestParam(&quot;id&quot;) String id);
+
+    @RequestMapping(method = RequestMethod.POST, value = &quot;/movies&quot;, produces = MediaType.APPLICATION_JSON_VALUE)
+    void createMovie(@RequestBody Movie movie);
+}
+</code></pre>
+<p>在上面的例子中，我创建了一个Feign 客户端，并映射了一个REST API方法来暴露电影服务。使用@FeignClient注解，可以声明我想要为movie微服务而创建的客户端API。接下来我声明了一个我想要实现的服务映射。通过在方法上声明一个URL规则来描述一个REST API的路由规则。</p>
+<p>更令人兴奋的是，这一切在Spring Cloud中都很容易，我所要做的仅仅是知道service ID来创建我的Feign 客户端。服务的URL地址在运行时环境是自动配置的，因为每一个在集群中的微服务将会在启动时通过绑定serviceid的方式来进行注册。</p>
+<p>微服务架构中的其它服务，也是通过上面提到的方式运行。我只需要知道进行通讯服务的serviceid，所有的操作都是通过Spring自动绑定的。</p>
+<h3 id="API-Gateway"><a href="#API-Gateway" class="headerlink" title="API Gateway"></a>API Gateway</h3><p>API Gateway 服务是Spring Cloud的另一个重要组件(关于它的介绍可以阅读本篇文章)。它可以用来管理集群服务中的领域实体。下图的绿色六边形是我们提供的数据驱动服务，主要用来管理自己的实体类和数据库。通过添加API Gateway服务，我们可以为通过下面绿颜色的服务为每一个API路由创建一个代理暴露接口。<br><img src="https://upload-images.jianshu.io/upload_images/12906348-227a71c6afbb4038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt><br>假设推荐服务和电影服务都暴露他们自己的REST API在自己管理的域实体上。API gataway通过discovery service和从其它服务注入的基于代理路由的 API方法。通过这种方式，包括推荐服务和电影服务将拥有一个完整定义的路由，通过暴露的REST API获得本地的微服务。API Gateway将会重定义路由请求到服务实例，这些请求都是基于HTTP的。</p>
+<h3 id="示例项目"><a href="#示例项目" class="headerlink" title="示例项目"></a>示例项目</h3><p>我已经在GitHub上创建了一个实例项目：<code>https://github.com/kbastani/spring-cloud-microservice-example</code>，这个项目是一个端到端的原生云平台，使用Spring Cloud构建实际的微服务架构。</p>
+<p>基本概念:</p>
+<p>使用Docker进行集成测试</p>
+<p>混合持久化</p>
+<p>微服务架构</p>
+<p>服务发现</p>
+<p>API网关</p>
+<p>Docker</p>
+<p>使用Docker对每一个服务进行构建和部署。使用Docker Compose在一个开发机上进行端到端的集成测试。</p>
+<h3 id="混合持久化"><a href="#混合持久化" class="headerlink" title="混合持久化"></a>混合持久化</h3><p>混合持久化其实就是说使用多种数据库来存储。不同的微服务实例都会使用它们自己的数据库，并通过REST服务或者消息总线来通信，举个例子，你可以使用基于以下数据库来构建微服务：</p>
+<p>Neo4j(图形化)、MongoDB(文档化)、MySQL(关联)</p>
+<p>微服务架构</p>
+<p>这个例子演示了如何使用微服务创建一个新的应用。由于在项目中的每一个微服务只有一个单一的父项目。开发者为此得到的收益是可以在本机上运行和开发每一个微服务。添加一个新的微服务非常简单，当发现微服务时将会自动发现运行时的集群环境上。</p>
+<h3 id="Service-Discovery"><a href="#Service-Discovery" class="headerlink" title="Service Discovery"></a>Service Discovery</h3><p>项目中包含两个发现服务，一个在Netflix Eureka，另一个使用了</p>
+<p>Consul from Hashicorp。多种发现服务提供了多种选择，一个是使用(Consul)来做DNS服务集群，另一个是(Consul)基于代理的API 网关。</p>
+<h3 id="API-网关"><a href="#API-网关" class="headerlink" title="API 网关"></a>API 网关</h3><p>每一个微服务都关联Eureka，在整个集群中检索API路由。使用这个策略，每一个在集群上运行的微服务只需要通过一个共同的API网关进行负载均衡和暴露接口，每一个服务也会自动发现并将路由请求转发到自己的路由服务中。这个代理技术有助于开发用户界面，作为平台完整的 API通过自己的主机映射为代理服务。</p>
+<h3 id="Docker-实例"><a href="#Docker-实例" class="headerlink" title="Docker 实例"></a>Docker 实例</h3><p>下面的实例将会通过Maven来构建，使用Docker为每一个微服务构建容器镜像。我们可以很优雅的使用Docker Compose在我们自己的主机上搭建全部的微服务集群。</p>
+<p>开始构建</p>
+<p>在这之前，请先移步至项目的GitHub 仓库。</p>
+<p><a href="https://github.com/kbastani/spring-cloud-microservice-example" target="_blank" rel="noopener">https://github.com/kbastani/spring-cloud-microservice-example</a></p>
+<p>克隆或者fork这个项目并且把源码下载到自己的电脑上。下载完毕后，你需要使用Maven和Docker来编译和构建本地的容器镜像。</p>
+<h3 id="下载Docker"><a href="#下载Docker" class="headerlink" title="下载Docker"></a>下载Docker</h3><p>首先，如果你还没有Docker请先下载它，然后在开发机上安装并运行。</p>
+<p>当然你也需要安装Docker Compose。</p>
+<h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><p>能够运行实例程序，需要在你的开发机上安装下面的软件：</p>
+<p>Maven 3、Java 8、Docker、Docker Compose</p>
+<h3 id="构建项目"><a href="#构建项目" class="headerlink" title="构建项目"></a>构建项目</h3><p>通过命令行方式来构建当前项目，在项目的根目录中运行如下的命令：</p>
+<pre><code class="bash"> $ mvn clean install
+</code></pre>
+<p>项目将会根据pom.xml中的每一个项目声明中下载相应的依赖jar包。每一个服务都将会被构建，同时Maven的Docker插件将会自动从本地Docker Registry中构建每一个容器镜像。Docker将会在构建成功后，根据命令行运行mvn clean install来清除相应的资源。</p>
+<p>在项目成功构建后，你将会看到如下的输出：</p>
+<pre><code class="bash">[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] spring-cloud-microservice-example-parent 0.1.0-SNAPSHOT SUCCESS [  0.707 s]
+[INFO] users-microservice 0.1.0 ........................... SUCCESS [ 15.891 s]
+[INFO] discovery-microservice 0.1.0 ....................... SUCCESS [  6.863 s]
+[INFO] api-gateway-microservice 0.1.0 ..................... SUCCESS [  4.520 s]
+[INFO] recommendation-microservice 0.1.0 .................. SUCCESS [  6.988 s]
+[INFO] config-microservice 0.1.0 .......................... SUCCESS [  6.203 s]
+[INFO] hystrix-dashboard 0.1.0 ............................ SUCCESS [  4.467 s]
+[INFO] consul-microservice 0.1.0 .......................... SUCCESS [  9.376 s]
+[INFO] movie-microservice 0.1.0 ........................... SUCCESS [  7.799 s]
+[INFO] movies-ui 0.1.0 .................................... SUCCESS [ 35.211 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:40 min
+[INFO] Finished at: 2018-09-01T11:19:58+08:00
+[INFO] ------------------------------------------------------------------------
+</code></pre>
+<p>通过Docker compose 启动集群</p>
+<p>现在每一个镜像都成功构建完毕，我们使用Docker Compose来加速启动我们的集群。我已经将Docker Compose的yaml文件包含进了项目中，大家可以从GitHub上获取。</p>
+<p>现在我们通过下面的命令行启动微服务集群：</p>
+<pre><code class="bash"> $ docker-compose up
+</code></pre>
+<p>如果一切配置都是正确的，每一个容器镜像将会通过在Docker上的虚拟容器和自动发现的网络服务来运行。当他们开始顺序启动时，你将会看到一系列的日志输出。这可能需要一段时间来完成，取决于运行你实例程序的机器性能。</p>
+<p>一旦容器启动成功，你将会通过Eureka主机看到通过Discovery service注册上来的应用服务。</p>
+<p>通过命令行终端复制粘贴下面的命令到Docker中定义的$DOCKER_HOST环境变量中。</p>
+<pre><code class="bash">$ open $(echo \&quot;$(echo $DOCKER_HOST)\&quot;| \sed &#39;s/tcp:\/\//http:\/\//g&#39;| \sed &#39;s/[0-9]\{4,\}/8761/g&#39;| \sed &#39;s/\&quot;//g&#39;)
+</code></pre>
+<p>如果Eureka正确的启动，浏览器将会启动并打开Eureka服务的仪表盘，如下图所示：<br><img src="https://upload-images.jianshu.io/upload_images/12906348-2b28fa94c879f571.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt><br>我们将会看到每一个正在运行的服务实例和状态。通过下面的命令来获取数据驱动服务，例如 movie 服务。</p>
+<pre><code class="bash">$ open $(echo \&quot;$(echo $DOCKER_HOST)/movie\&quot;| \sed &#39;s/tcp:\/\//http:\/\//g&#39;|
+ \sed &#39;s/[0-9]\{4,\}/10000/g&#39;| \sed &#39;s/\&quot;//g&#39;)
+</code></pre>
+<p>这个命令将会访问根据导航网关终端提供的代理方式访问movie服务的REST API终端。这些REST API使用 HATEOAS 来配置，它是一个通过内嵌链接的方式支持自动发现服务的接口。</p>
+<pre><code>{ &quot;_links&quot; : { &quot;self&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie&quot; },
+ &quot;resume&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/resume&quot; }, 
+&quot;pause&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/pause&quot; }, 
+&quot;restart&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/restart&quot; },
+ &quot;metrics&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/metrics&quot; }, 
+&quot;env&quot; : [ { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/env&quot; }, 
+{ &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/env&quot; } ], 
+&quot;archaius&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/archaius&quot; },
+ &quot;beans&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/beans&quot; },
+ &quot;configprops&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/configprops&quot; },
+ &quot;trace&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/trace&quot; }, 
+&quot;info&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/info&quot; }, 
+&quot;health&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/health&quot; }, 
+&quot;hystrix.stream&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/hystrix.stream&quot; },
+ &quot;routes&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/routes&quot; }, 
+&quot;dump&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/dump&quot; }, 
+&quot;refresh&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/refresh&quot; }, 
+&quot;mappings&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/mappings&quot; }, 
+&quot;autoconfig&quot; : { &quot;href&quot; : &quot;http://192.168.59.103:10000/movie/autoconfig&quot; } } }
+</code></pre><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>  这是使用Spring Cloud和Docker构建微服务架构的系列博文的第一部分。在本文中，我们接触到了如下的概念:</p>
+<p>  Service Discovery、Externalized Configuration、API Gateway、Service Orchestration with Docker Compose</p>
+<h3 id="项目来源"><a href="#项目来源" class="headerlink" title="项目来源"></a>项目来源</h3><ul>
+<li><strong> <a href="https://github.com/kbastani/spring-cloud-microservice-example" target="_blank" rel="noopener">Github</a></strong></li>
+</ul>
+<h3 id="环境版本"><a href="#环境版本" class="headerlink" title="环境版本"></a>环境版本</h3><pre><code>&lt;groupId&gt;com.spotify&lt;/groupId&gt;
+&lt;artifactId&gt;docker-maven-plugin&lt;/artifactId&gt;
+&lt;version&gt;0.4.13&lt;/version&gt;
+</code></pre><h3 id="用Maven构建-DockerImage-遇到的问题"><a href="#用Maven构建-DockerImage-遇到的问题" class="headerlink" title="用Maven构建 DockerImage 遇到的问题"></a>用Maven构建 DockerImage 遇到的问题</h3><pre><code class="bash"> $ workspace mvn clean install
+   .............
+   [INFO] spring-cloud-microservice-example-parent 0.1.0-SNAPSHOT SUCCESS [  1.269 s]
+   [INFO] users-microservice 0.1.0 ........................... FAILURE [ 32.674 s]
+   [INFO] discovery-microservice 0.1.0 ....................... SKIPPED
+   [INFO] api-gateway-microservice 0.1.0 ..................... SKIPPED
+   [INFO] recommendation-microservice 0.1.0 .................. SKIPPED
+   [INFO] config-microservice 0.1.0 .......................... SKIPPED
+   [INFO] hystrix-dashboard 0.1.0 ............................ SKIPPED
+   [INFO] consul-microservice 0.1.0 .......................... SKIPPED
+   [INFO] movie-microservice 0.1.0 ........................... SKIPPED
+   [INFO] movies-ui 0.1.0 .................................... SKIPPED
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD FAILURE
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Total time: 51.569 s
+   [INFO] Finished at: 2018-08-31T15:44:40+08:00
+   [INFO] ------------------------------------------------------------------------
+   [ERROR] Failed to execute goal com.spotify:docker-maven-plugin:0.4.13:build (default) on project users-microservice: Exception caught: java.util.concurrent.ExecutionException: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory -&gt; [Help 1]
+   [ERROR]
+   [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+   [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+   [ERROR]
+   [ERROR] For more information about the errors and possible solutions, please read the following articles:
+   [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+   [ERROR]
+   [ERROR] After correcting the problems, you can resume the build with the command
+   [ERROR]   mvn &lt;goals&gt; -rf :users-microservice
+</code></pre>
+<h3 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h3><p>   <a href="https://github.com/spotify/docker-maven-plugin/issues/61" target="_blank" rel="noopener">issues</a><br>   <img src="https://upload-images.jianshu.io/upload_images/12906348-f5fb4606d3572493.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h3 id="修改环境变量"><a href="#修改环境变量" class="headerlink" title="修改环境变量"></a>修改环境变量</h3><pre><code>   ➜  spring-cloud-microservice-example-master export DOCKER_HOST=unix:///var/run/docker.sock
+   ➜  spring-cloud-microservice-example-master systemctl restart docker
+</code></pre><h3 id="docker-删除无用镜像"><a href="#docker-删除无用镜像" class="headerlink" title="docker 删除无用镜像"></a>docker 删除无用镜像</h3><pre><code>$ spring-cloud-microservice-example-master docker images
+REPOSITORY                                                           TAG                 IMAGE ID            CREATED             SIZE
+kbastani/movies-ui                                                   latest              eb53c9a05123        7 minutes ago       761MB
+&lt;none&gt;                                                               &lt;none&gt;              3aebc8e7887a        18 hours ago        821MB
+elastic-job-lite-console                                             latest              b1251732b8bd        2 days ago          164MB
+waylau/docker-spring-boot                                            latest              e89293110aa1        2 days ago          177MB
+frolvlad/alpine-oraclejdk8                                           slim                b9038ea51d02        2 weeks ago         163MB
+zookeeper                                                            latest              eb85ac40e608        4 weeks ago         149MB
+hub.c.163.com/library/nginx                                          latest              46102226f2fd        16 months ago       109MB
+hub.c.163.com/library/mysql                                          latest              9e64176cd8a2        16 months ago       407MB
+java                                                                 8                   d23bdf5b1b1b        19 months ago       643MB
+registry.cn-hangzhou.aliyuncs.com/chainone/centos7-jdk8-maven3.3.9   latest              c9a2f484fae9        2 years ago         659MB
+gcr.io/google_containers/hyperkube                                   v0.17.0             e7f1aac231de        3 years ago         198MB
+gcr.io/google_containers/etcd                                        2.0.9               d5d77b0a1030        3 years ago         12.8MB
+gcr.io/google_containers/pause                                       0.8.0               bf595365a558        3 years ago         242kB
+➜  spring-cloud-microservice-example-master docker rmi 3aebc8e7887a
+Error response from daemon: conflict: unable to delete 3aebc8e7887a (must be forced) - image is being used by stopped container d568c78c0cd3
+➜  spring-cloud-microservice-example-master docker rm d568c78c0cd3
+d568c78c0cd3
+➜  spring-cloud-microservice-example-master docker rmi 3aebc8e7887a
+Deleted: sha256:3aebc8e7887ae0eaf74e717b00af17018e4fd0c2c0588aaf7b6322fc5d46de99
+Deleted: sha256:ea471022fcf6ba64ad2fd135be1eb81b2fbaa7e31eaed52186f0a0a64fa828b7
+Deleted: sha256:0fdcd8ce40b64d9e8d4255b9a03a16d8ed8c56868ad06be9830b97e2d297e25a
+Deleted: sha256:b307b0942e2527049b6730f8ff625a840b343dfa5b2905a8f9c7b0d51666d8f7
+Deleted: sha256:9e635bfc87c410e046e63fdc89e6e3b284bc47cb11bd16823dd66ff04e1c9362
+Deleted: sha256:a45a2f540f96398da8415254078fde85ffc2e36f2c9abac1c64782664dc1fb5e
+</code></pre>
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">     
+            :)
+        </div>
+        <div class="author-panel text-center">
+            <img src="https://upload-images.jianshu.io/upload_images/12906348-7f148c5cf6846b57.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="140" height="140" alt="个人头像" class="author-image">
+            <p class="author-description"> 上边是一个头像 </p>
+        </div>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/3/24/">windows 像 linux 一样执行命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/2/16/">Centos7 基础命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/8/">搭了一天的服务,终于可以用了</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/5/">虚拟机Linux CentOS 桥接模式和NAT模式配置静态IP的完美方案</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/30/">Git 命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/">Spring中@Async注解</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/9/">JSON格式化</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/28/">MySql唯一键重复的处理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/13/">Linux传输命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/5/">SpringMVC与struts2的区别</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/2/">java编码规范</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/11/">springboot相关配置</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/5/18/">用了一个月的mybatis总结</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/8/30/">基于SpringDataJest的ES数据查询与统计</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/">Spring中@Async注解</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/8/">搭了一天的服务,终于可以用了</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class>
+                    <a href="/2018/9/1/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class>
+                    <a href="/2018/9/1/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class>
+                    <a href="/2018/9/1/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/linux/" style="font-size: 11.747441013836873px;" class="tag-cloud-link">linux</a>
+    
+    <a href="/tags/mysql/" style="font-size: 16.87721969079516px;" class="tag-cloud-link">mysql</a>
+    
+    <a href="/tags/article/" style="font-size: 15.459022018099095px;" class="tag-cloud-link">article</a>
+    
+    <a href="/tags/spring/" style="font-size: 16.6844547773594px;" class="tag-cloud-link">spring</a>
+    
+    <a href="/tags/jvm/" style="font-size: 11.985140075952856px;" class="tag-cloud-link">jvm</a>
+    
+    <a href="/tags/code/" style="font-size: 15.03845981143359px;" class="tag-cloud-link">code</a>
+    
+    <a href="/tags/mybatis/" style="font-size: 12.830596887286859px;" class="tag-cloud-link">mybatis</a>
+    
+    <a href="/tags/ElasticSearch/" style="font-size: 17.196824691652942px;" class="tag-cloud-link">ElasticSearch</a>
+    
+    <a href="/tags/docker/" style="font-size: 17.42830180240468px;" class="tag-cloud-link">docker</a>
+    
+    <a href="/tags/thinking/" style="font-size: 14.648434521511888px;" class="tag-cloud-link">thinking</a>
+    
+    <a href="/tags/tools/" style="font-size: 14.65179875900505px;" class="tag-cloud-link">tools</a>
+    
+    <a href="/tags/ubuntu/" style="font-size: 12.177178840791498px;" class="tag-cloud-link">ubuntu</a>
+    
+    <a href="/tags/centos/" style="font-size: 15.77312663836064px;" class="tag-cloud-link">centos</a>
+    
+    <a href="/tags/command/" style="font-size: 14.257498060550674px;" class="tag-cloud-link">command</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://www.pexels.com/" target="_blank">pexels</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://user.qzone.qq.com/1585056329/" target="_blank">qq空间</a>
+    </li>
+    
+    <li>
+        <a href="https://honghuhu.github.io/note" target="_blank">私有便签墙</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <!-- <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2015 20iD
+    </div>
+</footer> -->
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+
+
+    <!--代码高亮插件,适用于所有主流编程语言，兼容性好，多种多样的预设样式-->
+    <link rel="stylesheet" href="/js/highlight/styles/atom-one-dark-reasonable.css">
+    <!--<script src="/js/highlight/highlight.pack.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script src="/js/blog.js"></script>
+
+
+<script>
+    window.hot_posts_count = '10'
+    window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
+
+
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://upload-images.jianshu.io/upload_images/12906348-f96383d067d31480.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" rel="shortcut icon">
+    <meta name="author" content="20iD">
+    
+    <meta name="description" content="上边是一个头像">
+    
+    
+    
+    
+    
+    
+    <!--<title>用Docker构建、运行发布一个SpringBoot应用 | 用Docker构建、运行发布一个SpringBoot应用</title>-->
+    <title>
+    
+        用Docker构建、运行发布一个SpringBoot应用
+    
+    </title>
+    <link href="”https://honghuhu.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <!--<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="/js/aos.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <script src="/js/av-min-1.2.1.js"></script>
+    <script>
+      AV.init({
+        appId: 'ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz',
+        appKey: 'iI5IG8y1lDal7V4V9kBtlEf4'
+      })
+    </script>
+    
+    <!--<script src="//cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <script>AV.initialize("ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz", "iI5IG8y1lDal7V4V9kBtlEf4");</script>
+</head></html>
+<link rel="stylesheet" href="/css/base.css">
+<body>
+    <!-- 背景轮播图功能 -->
+    <!--< % - partial('_partial/slideshow.ejs') % >-->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://honghuhu.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">20iD</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class>
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://honghuhu.github.io">文章杂货铺</a>
+        >
+        <span>用Docker构建、运行发布一个SpringBoot应用</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/8/29/">用Docker构建、运行发布一个SpringBoot应用</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/docker/">docker</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-08-29
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/8/29/">用Docker构建、运行发布一个SpringBoot应用</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-08-29
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/docker/">docker</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <ul>
+<li>摘要: 本文演示了如何用 Docker 构建、运行、发布来一个 Spring Boot 应用。 Docker 简介 Docker 是一个 Linux 容器管理工具包，具备“社交”方面，允许用户发布容器的 image (镜像)，并使用别人发布的 image。</li>
+<li>文章来源: <a href="https://yq.aliyun.com/articles/47344?do=login&amp;accounttraceid=f4ccb561-58ee-4362-882e-f9fa01effa0f" target="_blank" rel="noopener">云栖社区</a></li>
+</ul>
+<h3 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h3><ul>
+<li><strong> Docker 是一个 Linux 容器管理工具包，具备“社交”方面，允许用户发布容器的 image (镜像)，并使用别人发布的 image。Docker image 是用于运行容器化进程的方案，在本文中，我们将构建一个简单的 Spring Boot 应用程序。</strong></li>
+</ul>
+<h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><blockquote>
+<p>JDK 1.8+  </p>
+<blockquote>
+<p>自行 <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>Maven 3.0+ </p>
+<blockquote>
+<p>参考 <a href="https://www.cnblogs.com/freeweb/p/5241013.html" target="_blank" rel="noopener">博客园</a></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>Docker 最新版 </p>
+<blockquote>
+<p>有关 Docker 在的安装，自行 <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a>。 如果你的电脑不是 Linux 系统，最好装个虚拟机，在虚拟机里面装个 Linux ，因为 Docker 的依赖 Linux。</p>
+</blockquote>
+</blockquote>
+<h3 id="用-Maven-构建项目"><a href="#用-Maven-构建项目" class="headerlink" title="用 Maven 构建项目:"></a>用 Maven 构建项目:</h3><h4 id="创建目录结构（项目的目录结构因符合-Maven-的约定。）"><a href="#创建目录结构（项目的目录结构因符合-Maven-的约定。）" class="headerlink" title="创建目录结构（项目的目录结构因符合 Maven 的约定。）"></a>创建目录结构（项目的目录结构因符合 Maven 的约定。）</h4><p>  在 *nix 系统下执行 <code>mkdir -p src/main/java/docker_spring_boot</code> ,生产如下结构 :</p>
+<pre><code>└── src
+    └── main
+        └── java
+            └── com
+                └── waylau
+                    └── docker_spring_boot
+</code></pre><h3 id="创建-pom-xml-文件"><a href="#创建-pom-xml-文件" class="headerlink" title="创建 pom.xml 文件"></a>创建 pom.xml 文件</h3><pre><code>&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;
+
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.waylau&lt;/groupId&gt;
+    &lt;artifactId&gt;docker-spring-boot&lt;/artifactId&gt;
+    &lt;packaging&gt;jar&lt;/packaging&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;name&gt;docker-spring-boot&lt;/name&gt;
+    &lt;description&gt;Getting started with Spring Boot and Docker&lt;/description&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;1.3.3.RELEASE&lt;/version&gt;
+        &lt;relativePath/&gt;
+    &lt;/parent&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;build&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+            &lt;/plugin&gt;
+    &lt;!-- tag::plugin[] --&gt;
+            &lt;plugin&gt;
+                &lt;groupId&gt;com.spotify&lt;/groupId&gt;
+                &lt;artifactId&gt;docker-maven-plugin&lt;/artifactId&gt;
+                &lt;version&gt;0.4.3&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;imageName&gt;${docker.image.prefix}/${project.artifactId}&lt;/imageName&gt;
+                    &lt;dockerDirectory&gt;src/main/docker&lt;/dockerDirectory&gt;
+                    &lt;resources&gt;
+                        &lt;resource&gt;
+                            &lt;targetPath&gt;/&lt;/targetPath&gt;
+                            &lt;directory&gt;${project.build.directory}&lt;/directory&gt;
+                            &lt;include&gt;${project.build.finalName}.jar&lt;/include&gt;
+                        &lt;/resource&gt;
+                    &lt;/resources&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+    &lt;!-- end::plugin[] --&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+
+    &lt;properties&gt;
+        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;
+        &lt;docker.image.prefix&gt;waylau&lt;/docker.image.prefix&gt;
+        &lt;spring.boot.version&gt;1.3.3.RELEASE&lt;/spring.boot.version&gt;
+    &lt;/properties&gt;
+&lt;/project&gt;
+</code></pre><p style="margin-bottom: 10px; color: rgb(51, 51, 51); white-space: normal;"><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-tools/spring-boot-maven-plugin" data-spm-anchor-id="a2c4e.11153940.blogcont47344.14" style="background-color: transparent; color: rgb(51, 122, 183); transition: color 0.2s ease 0s;" _href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-tools/spring-boot-maven-plugin" target="_blank" rel="noopener">Spring Boot Maven plugin</a>&nbsp;提供了很多方便的功能：</p><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 30px;" class=" list-paddingleft-2"><li><p>它收集的类路径上所有 jar 文件，并构建成一个单一的、可运行的“über-jar”，这使得它更方便地执行和传输服务。</p></li><li><p>它搜索的&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">public static void main()</code>&nbsp;方法来标记为可运行的类。</p></li><li><p>它提供了一个内置的依赖解析器，用于设置版本号以匹配&nbsp;<a href="https://github.com/spring-projects/spring-boot/blob/master/spring-boot-dependencies/pom.xml" data-spm-anchor-id="a2c4e.11153940.blogcont47344.15" style="background-color: transparent; color: rgb(51, 122, 183); transition: color 0.2s ease 0s;" _href="https://github.com/spring-projects/spring-boot/blob/master/spring-boot-dependencies/pom.xml" target="_blank" rel="noopener">Spring Boot 的依赖</a>。您可以覆盖任何你想要的版本，但它会默认选择的 Boot 的版本集。</p></li></ul><p style="margin-bottom: 10px; color: rgb(51, 51, 51); white-space: normal;">Spotify 的&nbsp;<a href="https://github.com/spotify/docker-maven-plugin" data-spm-anchor-id="a2c4e.11153940.blogcont47344.16" style="background-color: transparent; color: rgb(51, 122, 183); transition: color 0.2s ease 0s;" _href="https://github.com/spotify/docker-maven-plugin" target="_blank" rel="noopener">docker-maven-plugin</a>&nbsp;插件是用于构建 Maven 的 Docker Image</p><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 30px;" class=" list-paddingleft-2"><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">imageName</code>指定了镜像的名字，本例为&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">waylau/docker-spring-boot</code></p></li><li><p><code data-spm-anchor-id="a2c4e.11153940.blogcont47344.i11.49eb7b82EI2lck" style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">dockerDirectory</code>指定 Dockerfile 的位置</p></li><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">resources</code>是指那些需要和 Dockerfile 放在一起，在构建镜像时使用的文件，一般应用 jar 包需要纳入。本例，只需一个 jar 文件。</p></li></ul><p></p>
+
+<h3 id="编写-Spring-Boot-应用"><a href="#编写-Spring-Boot-应用" class="headerlink" title="编写 Spring Boot 应用"></a>编写 Spring Boot 应用</h3><p><code>src/main/java/com/waylau/docker_spring_boot/Application.java:</code></p>
+<pre><code>package com.waylau.docker_spring_boot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * 主应用入口
+ * @author &lt;a href=&quot;http://waylau.com&quot;&gt;waylau.com&lt;/a&gt;
+ * @date 2016年3月19日
+ */
+@SpringBootApplication
+@RestController
+public class Application {
+
+    @RequestMapping(&quot;/&quot;)
+    public String home() {
+        return &quot;Hello Docker World.&quot;
+                + &quot;&lt;br /&gt;Welcome to &lt;a href=&#39;http://waylau.com&#39;&gt;waylau.com&lt;/a&gt;&lt;/li&gt;&quot;;
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+
+}
+</code></pre><p style="margin-bottom: 10px; color: rgb(51, 51, 51); white-space: normal;">解释下上面的代码：</p><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 30px;" class=" list-paddingleft-2"><li><p>类用&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">@SpringBootApplication</code>&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">@RestController</code>&nbsp;标识,可用 Spring MVC 来处理 Web 请求。</p></li><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">@RequestMapping</code>&nbsp;将&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/</code>&nbsp;映射到&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">home()</code>&nbsp;，并将”Hello Docker World” 文本作为响应。</p></li><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">main()</code>&nbsp;方法使用 Spring Boot 的&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">SpringApplication.run()</code>&nbsp;方法来启动应用。</p></li></ul><p></p>
+
+
+<h3 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h3><h5 id="使用-Maven"><a href="#使用-Maven" class="headerlink" title="使用 Maven"></a>使用 Maven</h5><p>编译:</p>
+<pre><code>mvn package
+</code></pre><p>运行:</p>
+<pre><code>java -jar target/docker-spring-boot-1.0.0.jar
+</code></pre><h3 id="访问项目"><a href="#访问项目" class="headerlink" title="访问项目"></a>访问项目</h3><p> 如果程序正确运行，浏览器访问 <code>http://192.168.36.133:8080/</code>，可以看到页面 “Hello Docker World.” 字样。</p>
+<h3 id="将项目容器化"><a href="#将项目容器化" class="headerlink" title="将项目容器化"></a>将项目容器化</h3><p> Docker 使用 Dockerfile 文件格式来指定 image 层，<br> 创建文件 <code>src/main/docker/Dockerfile</code>:</p>
+<pre><code>FROM frolvlad/alpine-oraclejdk8:slim
+VOLUME /tmp
+ADD docker-spring-boot-1.0.0.jar app.jar
+ENTRYPOINT [&quot;java&quot;,&quot;-Djava.security.egd=file:/dev/./urandom&quot;,&quot;-jar&quot;,&quot;/app.jar&quot;]
+</code></pre><p style="margin-bottom: 10px; color: rgb(51, 51, 51); white-space: normal;">解释下这个配置文件：</p><ul style="list-style-type: none; margin: 0px; padding: 0px 0px 0px 30px;" class=" list-paddingleft-2"><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">VOLUME</code>&nbsp;指定了临时文件目录为<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/tmp</code>。其效果是在主机&nbsp;<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/var/lib/docker</code>&nbsp;目录下创建了一个临时文件，并链接到容器的<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/tmp</code>。改步骤是可选的，如果涉及到文件系统的应用就很有必要了。<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/tmp</code>目录用来持久化到 Docker 数据文件夹，因为 Spring Boot 使用的内嵌 Tomcat 容器默认使用<code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">/tmp</code>作为工作目录</p></li><li><p>项目的 jar 文件作为 “app.jar” 添加到容器的</p></li><li><p><code style="font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 12.6px; color: rgb(199, 37, 78); background-color: rgb(249, 242, 244); border-radius: 4px; padding: 2px 4px;">ENTRYPOINT</code>&nbsp;执行项目 app.jar。为了缩短&nbsp;<a href="http://wiki.apache.org/tomcat/HowTo/FasterStartUp#Entropy_Source" data-spm-anchor-id="a2c4e.11153940.blogcont47344.19" style="background-color: transparent; color: rgb(51, 122, 183); transition: color 0.2s ease 0s;" _href="http://wiki.apache.org/tomcat/HowTo/FasterStartUp#Entropy_Source" target="_blank" rel="noopener">Tomcat 启动时间</a>，添加一个系统属性指向 “/dev/urandom” 作为 Entropy Source</p></li></ul><p style="margin-bottom: 10px; color: rgb(51, 51, 51); white-space: normal;"></p>
+
+<h3 id="构建-Docker-Image"><a href="#构建-Docker-Image" class="headerlink" title="构建 Docker Image"></a>构建 Docker Image</h3><p>执行构建成为 docker image:</p>
+<pre><code>mvn package docker:build
+</code></pre><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>运行 Docker Image</p>
+<pre><code>docker run -p 8080:8080 -t waylau/docker-spring-boot 
+</code></pre><pre><code>[root@waylau spring-boot]# docker run -p 8080:8080 -t waylau/docker-spring-boot
+
+  .   ____          _            __ _ _
+ /\\ / ___&#39;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &#39;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2016-03-20 08:45:51.276  INFO 1 --- [           main] c.waylau.docker_spring_boot.Application  : Starting Application v1.0.0 on 048fb623038f with PID 1 (/app.jar started by root in /)
+2016-03-20 08:45:51.289  INFO 1 --- [           main] c.waylau.docker_spring_boot.Application  : No active profile set, falling back to default profiles: default
+2016-03-20 08:45:51.722  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@669af5fc: startup date [Sun Mar 20 08:45:51 GMT 2016]; root of context hierarchy
+2016-03-20 08:45:54.874  INFO 1 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean &#39;beanNameViewResolver&#39; with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-03-20 08:45:57.893  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-03-20 08:45:57.982  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-03-20 08:45:57.984  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-03-20 08:45:58.473  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-03-20 08:45:58.473  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6877 ms
+2016-03-20 08:45:59.672  INFO 1 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: &#39;dispatcherServlet&#39; to [/]
+2016-03-20 08:45:59.695  INFO 1 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: &#39;characterEncodingFilter&#39; to: [/*]
+2016-03-20 08:45:59.701  INFO 1 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: &#39;hiddenHttpMethodFilter&#39; to: [/*]
+2016-03-20 08:45:59.703  INFO 1 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: &#39;httpPutFormContentFilter&#39; to: [/*]
+2016-03-20 08:45:59.703  INFO 1 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: &#39;requestContextFilter&#39; to: [/*]
+2016-03-20 08:46:00.862  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@669af5fc: startup date [Sun Mar 20 08:45:51 GMT 2016]; root of context hierarchy
+2016-03-20 08:46:01.166  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.String com.waylau.docker_spring_boot.Application.home()
+2016-03-20 08:46:01.189  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-03-20 08:46:01.190  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-20 08:46:01.302  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-20 08:46:01.302  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-20 08:46:01.438  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-20 08:46:01.833  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-03-20 08:46:02.332  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-03-20 08:46:02.343  INFO 1 --- [           main] c.waylau.docker_spring_boot.Application  : Started Application in 13.194 seconds (JVM running for 15.828)
+</code></pre><h3 id="访问项目-1"><a href="#访问项目-1" class="headerlink" title="访问项目"></a>访问项目</h3><p>如果程序正确运行，浏览器访问 <code>http://192.168.36.133:8080/</code>，可以看到页面 “Hello Docker World.” 字样。</p>
+<h3 id="推送-image-到-Docker-Hub"><a href="#推送-image-到-Docker-Hub" class="headerlink" title="推送 image 到 Docker Hub"></a>推送 image 到 Docker Hub</h3><p>首先，你在 Docker Hub 要有注册账号，且创建了相应的库；</p>
+<p>其次，docker 推送前，先要登录，否则报<code>unauthorized: access to the requested resource is not authorized</code>的错误</p>
+<p>执行：</p>
+<pre><code>docker login
+</code></pre><p>输出为：</p>
+<pre><code>[root@waylau spring-boot]# docker login
+Username: waylau
+Password: 
+Email: waylau521@gmail.com
+WARNING: login credentials saved in /root/.docker/config.json
+Login Succeeded
+</code></pre><p>执行推送</p>
+<pre><code>docker push waylau/docker-spring-boot
+</code></pre><pre><code>[root@waylau spring-boot]# docker push waylau/docker-spring-boot
+The push refers to a repository [docker.io/waylau/docker-spring-boot]
+751d29eef02e: Layer already exists 
+4da3741f39c7: Pushed 
+5f70bf18a086: Layer already exists 
+7e4d0cb13643: Layer already exists 
+8f045733649f: Layer already exists 
+latest: digest: sha256:eb4d5308ba1bb27489d808279e74784bda6761b3574f4298d746abba59b35164 size: 9415
+</code></pre><h3 id="镜像加速器"><a href="#镜像加速器" class="headerlink" title="镜像加速器"></a>镜像加速器</h3><p>Docker Hub 在国外，有时候拉取 Image 极其缓慢，可以使用国内的镜像来实现加速</p>
+<p>阿里云</p>
+<pre><code>echo &quot;DOCKER_OPTS=\&quot;--registry-mirror=https://yourlocation.mirror.aliyuncs.com\&quot;&quot; | sudo tee -a /etc/default/docker
+sudo service docker restart
+</code></pre><p>其中 <code>https://yourlocation.mirror.aliyuncs.com</code> 是您在阿里云注册后的专属加速器地址</p>
+<h3 id="DaoCloud"><a href="#DaoCloud" class="headerlink" title="DaoCloud"></a>DaoCloud</h3><pre><code>sudo echo “DOCKER_OPTS=\”\$DOCKER_OPTS –registry-mirror=http://your-id.m.daocloud.io -d\”” &gt;&gt; /etc/default/docker
+sudo service docker restart
+</code></pre><p>其中 <code>http://your-id.m.daocloud.io</code> 是您在 DaoCloud 注册后的专属加速器地址</p>
+<p>获取项目镜像，执行</p>
+<pre><code>docker pull waylau/docker-spring-boot
+</code></pre>
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">     
+            :)
+        </div>
+        <div class="author-panel text-center">
+            <img src="https://upload-images.jianshu.io/upload_images/12906348-7f148c5cf6846b57.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="140" height="140" alt="个人头像" class="author-image">
+            <p class="author-description"> 上边是一个头像 </p>
+        </div>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/3/24/">windows 像 linux 一样执行命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/2/16/">Centos7 基础命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/8/">搭了一天的服务,终于可以用了</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/5/">虚拟机Linux CentOS 桥接模式和NAT模式配置静态IP的完美方案</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/30/">Git 命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/">Spring中@Async注解</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/9/">JSON格式化</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/28/">MySql唯一键重复的处理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/10/19/">Find命令是Linux文件查找利器吗?</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/3/">Hibernate中get和load方法的区别</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/19/">Mybatis与Hibernate</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/20/">mysqlBatch</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/26/">项目配置运行</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/8/">JVM 垃圾回收器工作原理及使用实例介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/5/18/">用了一个月的mybatis总结</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/8/6/">用户昵称允许设置 emoji 😄️</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/8/2/">jvm排查问题心得</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/2/16/">Centos7 基础命令</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class>
+                    <a href="/2018/8/29/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class>
+                    <a href="/2018/8/29/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class>
+                    <a href="/2018/8/29/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/linux/" style="font-size: 17.293056957144422px;" class="tag-cloud-link">linux</a>
+    
+    <a href="/tags/mysql/" style="font-size: 8.439764314671681px;" class="tag-cloud-link">mysql</a>
+    
+    <a href="/tags/article/" style="font-size: 13.071632051972498px;" class="tag-cloud-link">article</a>
+    
+    <a href="/tags/spring/" style="font-size: 16.344907580589883px;" class="tag-cloud-link">spring</a>
+    
+    <a href="/tags/jvm/" style="font-size: 18.669886985080055px;" class="tag-cloud-link">jvm</a>
+    
+    <a href="/tags/code/" style="font-size: 19.72858578661269px;" class="tag-cloud-link">code</a>
+    
+    <a href="/tags/mybatis/" style="font-size: 15.18794606527934px;" class="tag-cloud-link">mybatis</a>
+    
+    <a href="/tags/ElasticSearch/" style="font-size: 11.683366484045209px;" class="tag-cloud-link">ElasticSearch</a>
+    
+    <a href="/tags/docker/" style="font-size: 17.097694061378174px;" class="tag-cloud-link">docker</a>
+    
+    <a href="/tags/thinking/" style="font-size: 10.98211745468598px;" class="tag-cloud-link">thinking</a>
+    
+    <a href="/tags/tools/" style="font-size: 19.153348282662446px;" class="tag-cloud-link">tools</a>
+    
+    <a href="/tags/ubuntu/" style="font-size: 17.930428789728413px;" class="tag-cloud-link">ubuntu</a>
+    
+    <a href="/tags/centos/" style="font-size: 14.81335405066805px;" class="tag-cloud-link">centos</a>
+    
+    <a href="/tags/command/" style="font-size: 13.024834922956472px;" class="tag-cloud-link">command</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://www.pexels.com/" target="_blank">pexels</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://user.qzone.qq.com/1585056329/" target="_blank">qq空间</a>
+    </li>
+    
+    <li>
+        <a href="https://honghuhu.github.io/note" target="_blank">私有便签墙</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <!-- <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2015 20iD
+    </div>
+</footer> -->
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+
+
+    <!--代码高亮插件,适用于所有主流编程语言，兼容性好，多种多样的预设样式-->
+    <link rel="stylesheet" href="/js/highlight/styles/atom-one-dark-reasonable.css">
+    <!--<script src="/js/highlight/highlight.pack.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script src="/js/blog.js"></script>
+
+
+<script>
+    window.hot_posts_count = '10'
+    window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
+
+
+</html>

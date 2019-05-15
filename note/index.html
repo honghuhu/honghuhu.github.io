@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache/cache.appcache">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <!--页面全屏无缩放-->
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <title>便签墙</title>
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <link rel="shortcut icon" href="../imgs/logo.ico">
+    <link rel="stylesheet" type="text/css" href="style/ModalWindowEffects/css/default.css">
+    <link rel="stylesheet" type="text/css" href="style/ModalWindowEffects/css/component.css">
+    <link rel="stylesheet" type="text/css" href="css/note.css">
+    <link rel="stylesheet" type="text/css" href="css/my_style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/note.js"></script>
+    <script type="text/javascript" src="style/layer/layer.js"></script>
+    <script type="text/javascript" src="style/layer/mobile/layer.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <!--Bootstrap 颜色选择插件-->
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap-colorpicker.css">
+    <script src="style/bootstrap-3.3.7-dist/js/bootstrap-colorpicker.js"></script>
+    <script src="js/love.js"></script>
+</head>
+<body class="gray-bg">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="wrapper wrapper-content animated fadeInUp">
+            <!--<ul class="notes">
+                <li>
+                    <div style="background:#ffffff">
+                        <small>2018-07-18 9:5:11</small>
+                        <h4>HTML5 便签</h4>
+                        <p style="overflow:hidden" title="这是测试代码🌹🌹🌹">
+                            使用Bootstrap 为你设计一个不一样的便签 🌹🌹🌹</p>
+                        <a class="md-trigger" data-modal="modal-19" href="javascript:showDetail(1)"><i class="m-l-n-xxl fa fa-eye"></i></a>
+                        <a href="javascript:showEditModel(1);"><i class="m-l-n-lg fa fa-pencil"></i></a>
+                        <a href="javascript:deleteNote(1);"><i class="m-l-n-sm fa fa-trash-o"></i></a></div>
+                </li>
+            </ul>-->
+            <ul class="notes" id="notes">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade modal_sel" id="addModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加便签
+                </h4>
+            </div>
+            <div class="modal-body" style="height: 300px">
+                <div class="input-group <!--input-group-lg-->">
+                    <span class="input-group-addon">标题</span>
+                    <input type="text" class="form-control" name="title" maxlength="20" placeholder>
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">内容</span>
+                    <textarea type="text" class="form-control" name="content" placeholder rows="3"></textarea>
+                </div>
+                <br>
+                <!--<div class="input-group &lt;!&ndash; input-group-sm&ndash;&gt;">
+                    <span class="input-group-addon">便签背景色</span>
+                    <input type="text" class="form-control" name="background" placeholder="丷是RGB码 例如:#D3D500,可以不填">
+                </div>-->
+                <div id="color" class="input-group colorpicker-component colorpicker-element" title="Using horizontal option">
+                    <input type="text" class="form-control input-group-lg" name="background" value="rgba(5, 242, 202, 0.82)">
+                    <span class="input-group-addon"><i style="background-color: rgba(172, 45, 204, 0.17);"></i></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" href="javascript:$('#addModal').modal('hide'),clearInput();">关闭</a>
+                <a class="btn btn-default" href="javascript:addNote()">添加</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END addNode  model -->
+<div class="modal fade modal_sel" id="editModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    编辑便签
+                </h4>
+            </div>
+            <input type="hidden" name="u-id">
+            <div class="modal-body" style="height: 300px">
+                <div class="input-group <!--input-group-lg-->">
+                    <span class="input-group-addon">标题</span>
+                    <input type="text" class="form-control" name="u-title" maxlength="20" placeholder="我显示为标题，你看着办。">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">内容</span>
+                    <textarea type="text" class="form-control" name="u-content" placeholder="这是一个神奇的输入框" rows="3"></textarea>
+                </div>
+                <br>
+                <!--<div class="input-group &lt;!&ndash; input-group-sm&ndash;&gt;">
+                    <span class="input-group-addon">便签背景色</span>
+                    <input type="text" class="form-control" name="background" placeholder="丷是RGB码 例如:#D3D500,可以不填">
+                </div>-->
+                <div id="u-color" class="input-group colorpicker-component colorpicker-element" title="Using horizontal option">
+                    <input type="text" class="form-control input-group-lg" name="u-background">
+                    <span class="input-group-addon"><i style="background-color: rgba(172, 45, 204, 0.17);"></i></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" href="javascript:$('#editModal').modal('hide')">关闭</a>
+                <a class="btn btn-default" href="javascript:editNote()">更新</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END editNode  model -->
+
+<div class="gohome">
+    <a class="animated bounceInUp" href="http://wangyuxiangnn.github.io" title="返回首页">
+        <i class="fa fa-home"></i>
+    </a>
+</div>
+<div class="goTop">
+    <a class="animated bounceInUp" href="#" title="返回首页">
+        <i class="fa fa-home"></i>
+    </a>
+</div>
+<div class="addNote">
+    <a class="animated bounceInLeft" href="javascript:$('#addModal').modal()" title="添加便签">
+        <i class="glyphicon glyphicon-plus-sign"></i>
+    </a>
+</div>
+<div class="fullScreen">
+    <a class="animated bounceInUp" href="javascript:isfullScreen()" title="全屏">
+        <i id="fullScreen" class="glyphicon glyphicon-fullscreen"></i>
+    </a>
+</div>
+
+<!--<a class="md-trigger" data-modal="modal-19" href="javascript:showDetail(1)">Fade in &amp; Scale</a>-->
+<!--<button class="md-trigger" data-modal="modal-19" >Fade in &amp; Scale</button>-->
+<div class="md-modal md-effect-19" id="modal-19">
+    <div class="md-content">
+        <h3 data-name="s-title">default</h3>
+        <div>
+            <p data-name="s-content">This is a modal window. You can do the following things with it:</p>
+            <!--<ul>-->
+                <!--<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>-->
+                <!--<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>-->
+                <!--<li><strong>Close:</strong> click on the button below to close the modal.</li>-->
+            <!--</ul>-->
+            <button class="md-close" style="background: rgba(0,0,0,0.1);" onclick="$('#modal-19').removeClass('md-show');">Close me!</button>
+        </div>
+    </div>
+</div>
+<!--便签查看详情-->
+<div class="md-overlay"></div><!-- the overlay element -->
+</body>
+<!--当页面加载完成后加载-辐射伞-->
+<!--<script>
+    var colorLine = ["0,0,0", "39,151,255", "56,163,143", "63,168,55", "102,185,255"];
+    if (screen && screen.width > 480) {
+        document.write('<script type="text/javascript" color="' + colorLine[Math.floor(Math.random() * colorLine.length)] + '" opacity="50" zIndex="-2" count="110" src="js/radiation_umbrella.js"><\/script>');
+    } else {
+        document.write('<script type="text/javascript" color="' + colorLine[Math.floor(Math.random() * colorLine.length)] + '" opacity="80" zIndex="-2" count="39" src="js/radiation_umbrella.js"><\/script>');
+    }
+</script>-->
+</html>
