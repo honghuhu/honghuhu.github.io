@@ -13,10 +13,10 @@
     
     
     
-    <!--<title>categories: bug | </title>-->
+    <!--<title>在docker环境中通过 logstash 给 ES 注入数据 | 在docker环境中通过 logstash 给 ES 注入数据</title>-->
     <title>
     
-        文章杂货铺
+        在docker环境中通过 logstash 给 ES 注入数据
     
     </title>
     <link href="”https://honghuhu.github.io“" rel="”prefetch”">
@@ -98,7 +98,7 @@
                 
                 
                 
-                <li class="current">
+                <li class>
                     <a href="/categories">
                         <i class="fa fa-list"></i>分类
                     </a>
@@ -129,19 +129,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-category">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://honghuhu.github.io">文章杂货铺</a>
         >
-        <span>目录</span>
+        <span>在docker环境中通过 logstash 给 ES 注入数据</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/categories/bug/index.html">bug</a>
+                <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/全文检索/">全文检索</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-06-29
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -149,24 +168,124 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/categories/bug/index.html">bug</a>
+                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-06-29
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/全文检索/">全文检索</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2018/8/2/">jvm排查问题心得</a>
-            <br>
-            
-            <a href="/2018/3/26/">项目配置运行</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <ul>
+<li>注</li>
+<li><ol>
+<li>准备数据文件</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>准备对应导入数据格式的<code>logstash</code>配置文件</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>配置容器版<code>Logstash</code>,使用<code>Dockerfile</code>自定义一款镜像</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>使用<code>Dockerfile</code>创建<code>logstash_image</code>镜像<br><code>/home/kyle/explore-es</code></li>
+</ol>
+</li>
+<li><ol start="5">
+<li>启动 <code>ES</code> 服务</li>
+</ol>
+</li>
+<li><ol start="6">
+<li>启动<code>logstash</code>将数据导入<code>ES</code></li>
+</ol>
+</li>
+</ul>
+<h2 id="注"><a href="#注" class="headerlink" title="注"></a>注</h2><p><code>/home/kyle/explore-es</code><br>为安装 <code>docker</code> 的虚拟机文件路径,所有操作都在虚拟机里执行</p>
+<h2 id="1-准备数据文件"><a href="#1-准备数据文件" class="headerlink" title="1. 准备数据文件"></a>1. 准备数据文件</h2><p><code>/home/kyle/explore-es/source/movies.csv</code></p>
+<p>下载最MovieLens最小测试数据集：</p>
+<p><a href="https://grouplens.org/datasets/movielens/" target="_blank" rel="noopener">https://grouplens.org/datasets/movielens</a></p>
+<h2 id="2-准备对应导入数据格式的logstash配置文件"><a href="#2-准备对应导入数据格式的logstash配置文件" class="headerlink" title="2. 准备对应导入数据格式的logstash配置文件"></a>2. 准备对应导入数据格式的<code>logstash</code>配置文件</h2><p><code>/home/kyle/explore-es/pipeline/logstash.conf</code></p>
+<pre><code>input {
+  file {
+    path =&gt; &quot;/user/share/source/movies.csv&quot;
+    start_position =&gt; &quot;beginning&quot;
+    sincedb_path =&gt; &quot;/dev/null&quot;
+  }
+}
+filter {
+  csv {
+    separator =&gt; &quot;,&quot;
+    columns =&gt; [&quot;id&quot;,&quot;content&quot;,&quot;genre&quot;]
+  }
+
+  mutate {
+    split =&gt; { &quot;genre&quot; =&gt; &quot;|&quot; }
+    remove_field =&gt; [&quot;path&quot;, &quot;host&quot;,&quot;@timestamp&quot;,&quot;message&quot;]
+  }
+
+  mutate {
+    split =&gt; [&quot;content&quot;, &quot;(&quot;]
+    add_field =&gt; { &quot;title&quot; =&gt; &quot;%{[content][0]}&quot;}
+    add_field =&gt; { &quot;year&quot; =&gt; &quot;%{[content][1]}&quot;}
+  }
+
+  mutate {
+    convert =&gt; {
+      &quot;year&quot; =&gt; &quot;integer&quot;
+    }
+    strip =&gt; [&quot;title&quot;]
+    remove_field =&gt; [&quot;path&quot;, &quot;host&quot;,&quot;@timestamp&quot;,&quot;message&quot;,&quot;content&quot;]
+  }
+}
+output {
+   elasticsearch {
+     hosts =&gt; &quot;http://192.168.80.129:9200&quot;
+     index =&gt; &quot;movies&quot;
+     document_id =&gt; &quot;%{id}&quot;
+   }
+  stdout {}
+}
+</code></pre><h2 id="3-配置容器版Logstash-使用Dockerfile自定义一款镜像"><a href="#3-配置容器版Logstash-使用Dockerfile自定义一款镜像" class="headerlink" title="3. 配置容器版Logstash,使用Dockerfile自定义一款镜像"></a>3. 配置容器版<code>Logstash</code>,使用<code>Dockerfile</code>自定义一款镜像</h2><p><code>/home/kyle/explore-es/Dockerfile</code></p>
+<pre><code>FROM logstash:7.1.0  # 注: 版本必须与 `ES` 版本一致
+RUN rm -f /usr/share/logstash/pipeline/logstash.conf
+ADD ./pipeline /usr/share/logstash/pipeline/
+ADD ./source /user/share/source
+</code></pre><h2 id="4-使用Dockerfile创建logstash-image镜像"><a href="#4-使用Dockerfile创建logstash-image镜像" class="headerlink" title="4. 使用Dockerfile创建logstash_image镜像"></a>4. 使用<code>Dockerfile</code>创建<code>logstash_image</code>镜像</h2><p><code>/home/kyle/explore-es</code></p>
+<pre><code>docker build -t logstash_image .
+docker images
+    REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+    logstash_image               latest              ba7fdb87469e        21 hours ago        848 MB
+</code></pre><h2 id="5-启动-ES-服务"><a href="#5-启动-ES-服务" class="headerlink" title="5. 启动 ES 服务"></a>5. 启动 <code>ES</code> 服务</h2><pre><code>docker ps -a
+    9f43384e454b        elasticsearch:7.1.0      &quot;/usr/local/bin/do...&quot;   21 hours ago        Exited (143) 21 hours ago                       es7_01
+    ce011bccd327        elasticsearch:7.1.0      &quot;/usr/local/bin/do...&quot;   21 hours ago        Exited (143) 21 hours ago                       es7_02
+docker start es7_01 es7_02
+    es7_01
+    es7_02
+docker ps 
+    CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                              NAMES
+    9f43384e454b        elasticsearch:7.1.0   &quot;/usr/local/bin/do...&quot;   21 hours ago        Up 26 seconds       0.0.0.0:9200-&gt;9200/tcp, 9300/tcp   es7_01
+    ce011bccd327        elasticsearch:7.1.0   &quot;/usr/local/bin/do...&quot;   21 hours ago        Up 25 seconds       9200/tcp, 9300/tcp                 es7_02
+</code></pre><h2 id="6-启动logstash将数据导入ES"><a href="#6-启动logstash将数据导入ES" class="headerlink" title="6. 启动logstash将数据导入ES"></a>6. 启动<code>logstash</code>将数据导入<code>ES</code></h2><pre><code> docker run --name logstash logstash_image
+</code></pre>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -283,13 +402,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/5/">SpringMVC与struts2的区别</a>
+                    <a href="/2018/3/8/">shell 脚本中 执行mysql查询语句并将结果导出excel中，表内容与表头别名中文乱码问题</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/23/">Apache Thrift - 可伸缩的跨语言服务开发框架</a>
+                    <a href="/2018/5/18/">用了一个月的mybatis总结</a>
                 </span>
             </li>
             
@@ -307,13 +426,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/8/8/">Mybatis查询缓存引起的问题</a>
+                    <a href="/2018/4/9/">mybatis深入理解(一)之 (#与$) 区别以及 sql 预编译</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/8/6/">用户昵称允许设置 emoji 😄️</a>
+                    <a href="/2018/8/10/">SpringBoot 读取yaml文件</a>
                 </span>
             </li>
             
@@ -331,13 +450,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
+                    <a href="/2018/12/8/">搭了一天的服务,终于可以用了</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/3/24/">windows 像 linux 一样执行命令</a>
+                    <a href="/2017/10/19/">Find命令是Linux文件查找利器吗?</a>
                 </span>
             </li>
             
@@ -350,47 +469,47 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class>
-                    <a href="/categories/bug/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/6/29/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class>
-                    <a href="/categories/bug/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/6/29/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class>
-                    <a href="/categories/bug/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/6/29/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/linux/" style="font-size: 18.721486872821092px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 17.442177532243104px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/mysql/" style="font-size: 18.35734948451011px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 10.858088347893933px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/article/" style="font-size: 15.425609243399952px;" class="tag-cloud-link">article</a>
+    <a href="/tags/article/" style="font-size: 18.431901357744664px;" class="tag-cloud-link">article</a>
     
-    <a href="/tags/spring/" style="font-size: 16.96894073045023px;" class="tag-cloud-link">spring</a>
+    <a href="/tags/spring/" style="font-size: 13.993099757547455px;" class="tag-cloud-link">spring</a>
     
-    <a href="/tags/mybatis/" style="font-size: 14.222587031907256px;" class="tag-cloud-link">mybatis</a>
+    <a href="/tags/mybatis/" style="font-size: 18.981335217799174px;" class="tag-cloud-link">mybatis</a>
     
-    <a href="/tags/code/" style="font-size: 9.060112798582644px;" class="tag-cloud-link">code</a>
+    <a href="/tags/code/" style="font-size: 15.284203297275539px;" class="tag-cloud-link">code</a>
     
-    <a href="/tags/jvm/" style="font-size: 12.585903166450068px;" class="tag-cloud-link">jvm</a>
+    <a href="/tags/jvm/" style="font-size: 16.666277249442402px;" class="tag-cloud-link">jvm</a>
     
-    <a href="/tags/ElasticSearch/" style="font-size: 19.61214549938221px;" class="tag-cloud-link">ElasticSearch</a>
+    <a href="/tags/ElasticSearch/" style="font-size: 14.123514817678949px;" class="tag-cloud-link">ElasticSearch</a>
     
-    <a href="/tags/docker/" style="font-size: 10.00065051971454px;" class="tag-cloud-link">docker</a>
+    <a href="/tags/docker/" style="font-size: 18.337120471122066px;" class="tag-cloud-link">docker</a>
     
-    <a href="/tags/tools/" style="font-size: 8.210934342226864px;" class="tag-cloud-link">tools</a>
+    <a href="/tags/tools/" style="font-size: 11.768945688374668px;" class="tag-cloud-link">tools</a>
     
-    <a href="/tags/thinking/" style="font-size: 12.908114276973423px;" class="tag-cloud-link">thinking</a>
+    <a href="/tags/thinking/" style="font-size: 17.35046862041304px;" class="tag-cloud-link">thinking</a>
     
-    <a href="/tags/ubuntu/" style="font-size: 18.119839386220722px;" class="tag-cloud-link">ubuntu</a>
+    <a href="/tags/ubuntu/" style="font-size: 15.51055596021573px;" class="tag-cloud-link">ubuntu</a>
     
-    <a href="/tags/全文检索/" style="font-size: 15.686354490582836px;" class="tag-cloud-link">全文检索</a>
+    <a href="/tags/全文检索/" style="font-size: 15.255194068823169px;" class="tag-cloud-link">全文检索</a>
     
-    <a href="/tags/centos/" style="font-size: 13.08240613804659px;" class="tag-cloud-link">centos</a>
+    <a href="/tags/centos/" style="font-size: 13.006704940696372px;" class="tag-cloud-link">centos</a>
     
-    <a href="/tags/command/" style="font-size: 15.16140232497328px;" class="tag-cloud-link">command</a>
+    <a href="/tags/command/" style="font-size: 9.161503437514117px;" class="tag-cloud-link">command</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
