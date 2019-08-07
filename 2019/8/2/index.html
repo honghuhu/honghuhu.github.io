@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://upload-images.jianshu.io/upload_images/12906348-f96383d067d31480.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" rel="shortcut icon">
+    <meta name="author" content="20iD">
+    
+    <meta name="description" content="上边是一个头像">
+    
+    
+    
+    
+    
+    
+    <!--<title>保证消息队列的高可用 | 保证消息队列的高可用</title>-->
+    <title>
+    
+        保证消息队列的高可用
+    
+    </title>
+    <link href="”https://honghuhu.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <!--<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="/js/aos.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <script src="/js/av-min-1.2.1.js"></script>
+    <script>
+      AV.init({
+        appId: 'ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz',
+        appKey: 'iI5IG8y1lDal7V4V9kBtlEf4'
+      })
+    </script>
+    
+    <!--<script src="//cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>-->
+    <script>AV.initialize("ySOeYzHAhPJmvs2W3YOL3Ls6-gzGzoHsz", "iI5IG8y1lDal7V4V9kBtlEf4");</script>
+</head></html>
+<link rel="stylesheet" href="/css/base.css">
+<body>
+    <!-- 背景轮播图功能 -->
+    <!--< % - partial('_partial/slideshow.ejs') % >-->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://honghuhu.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Kyle</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class>
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://honghuhu.github.io">文章杂货铺</a>
+        >
+        <span>保证消息队列的高可用</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2019/8/2/">保证消息队列的高可用</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/消息队列/">消息队列</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-08-02
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2019/8/2/">保证消息队列的高可用</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-08-02
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/消息队列/">消息队列</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h2><p>如何保证消息队列的高可用？</p>
+<h2 id="面试官心理分析"><a href="#面试官心理分析" class="headerlink" title="面试官心理分析"></a>面试官心理分析</h2><p>如果有人问到你 MQ 的知识，<strong>高可用是必问的</strong>。<a href="/2019/8/1">上一讲</a>提到，MQ 会导致<strong>系统可用性降低</strong>。所以只要你用了 MQ，接下来问的一些要点肯定就是围绕着 MQ 的那些缺点怎么来解决了。</p>
+<p>要是你傻乎乎的就干用了一个 MQ，各种问题从来没考虑过，那你就杯具了，面试官对你的感觉就是，只会简单使用一些技术，没任何思考，马上对你的印象就不太好了。这样的同学招进来要是做个 20k 薪资以内的普通小弟还凑合，要是做薪资 20k+ 的高工，那就惨了，让你设计个系统，里面肯定一堆坑，出了事故公司受损失，团队一起背锅。</p>
+<h2 id="面试题剖析"><a href="#面试题剖析" class="headerlink" title="面试题剖析"></a>面试题剖析</h2><p>这个问题这么问是很好的，因为不能问你 Kafka 的高可用性怎么保证？ActiveMQ 的高可用性怎么保证？一个面试官要是这么问就显得很没水平，人家可能用的就是 RabbitMQ，没用过 Kafka，你上来问人家 Kafka 干什么？这不是摆明了刁难人么。</p>
+<p>所以有水平的面试官，问的是 MQ 的高可用性怎么保证？这样就是你用过哪个 MQ，你就说说你对那个 MQ 的高可用性的理解。</p>
+<h3 id="RabbitMQ-的高可用性"><a href="#RabbitMQ-的高可用性" class="headerlink" title="RabbitMQ 的高可用性"></a>RabbitMQ 的高可用性</h3><p>RabbitMQ 是比较有代表性的，因为是<strong>基于主从</strong>（非分布式）做高可用性的，我们就以 RabbitMQ 为例子讲解第一种 MQ 的高可用性怎么实现。</p>
+<p>RabbitMQ 有三种模式：单机模式、普通集群模式、镜像集群模式。</p>
+<h4 id="单机模式"><a href="#单机模式" class="headerlink" title="单机模式"></a>单机模式</h4><p>单机模式，就是 Demo 级别的，一般就是你本地启动了玩玩儿的😄，没人生产用单机模式。</p>
+<h4 id="普通集群模式（无高可用性）"><a href="#普通集群模式（无高可用性）" class="headerlink" title="普通集群模式（无高可用性）"></a>普通集群模式（无高可用性）</h4><p>普通集群模式，意思就是在多台机器上启动多个 RabbitMQ 实例，每个机器启动一个。你<strong>创建的 queue，只会放在一个 RabbitMQ 实例上</strong>，但是每个实例都同步 queue 的元数据（元数据可以认为是 queue 的一些配置信息，通过元数据，可以找到 queue 所在实例）。你消费的时候，实际上如果连接到了另外一个实例，那么那个实例会从 queue 所在实例上拉取数据过来。</p>
+<p><img src="https://raw.githubusercontent.com/doocs/advanced-java/master/images/mq-7.png" alt="mq-7"></p>
+<p>这种方式确实很麻烦，也不怎么好，<strong>没做到所谓的分布式</strong>，就是个普通集群。因为这导致你要么消费者每次随机连接一个实例然后拉取数据，要么固定连接那个 queue 所在实例消费数据，前者有<strong>数据拉取的开销</strong>，后者导致<strong>单实例性能瓶颈</strong>。</p>
+<p>而且如果那个放 queue 的实例宕机了，会导致接下来其他实例就无法从那个实例拉取，如果你<strong>开启了消息持久化</strong>，让 RabbitMQ 落地存储消息的话，<strong>消息不一定会丢</strong>，得等这个实例恢复了，然后才可以继续从这个 queue 拉取数据。</p>
+<p>所以这个事儿就比较尴尬了，这就<strong>没有什么所谓的高可用性</strong>，<strong>这方案主要是提高吞吐量的</strong>，就是说让集群中多个节点来服务某个 queue 的读写操作。</p>
+<h4 id="镜像集群模式（高可用性）"><a href="#镜像集群模式（高可用性）" class="headerlink" title="镜像集群模式（高可用性）"></a>镜像集群模式（高可用性）</h4><p>这种模式，才是所谓的 RabbitMQ 的高可用模式。跟普通集群模式不一样的是，在镜像集群模式下，你创建的 queue，无论元数据还是 queue 里的消息都会<strong>存在于多个实例上</strong>，就是说，每个 RabbitMQ 节点都有这个 queue 的一个<strong>完整镜像</strong>，包含 queue 的全部数据的意思。然后每次你写消息到 queue 的时候，都会自动把<strong>消息同步</strong>到多个实例的 queue 上。</p>
+<p><img src="https://raw.githubusercontent.com/doocs/advanced-java/master/images/mq-8.png" alt="mq-8"></p>
+<p>那么<strong>如何开启这个镜像集群模式</strong>呢？其实很简单，RabbitMQ 有很好的管理控制台，就是在后台新增一个策略，这个策略是<strong>镜像集群模式的策略</strong>，指定的时候是可以要求数据同步到所有节点的，也可以要求同步到指定数量的节点，再次创建 queue 的时候，应用这个策略，就会自动将数据同步到其他的节点上去了。</p>
+<p>这样的话，好处在于，你任何一个机器宕机了，没事儿，其它机器（节点）还包含了这个 queue 的完整数据，别的 consumer 都可以到其它节点上去消费数据。坏处在于，第一，这个性能开销也太大了吧，消息需要同步到所有机器上，导致网络带宽压力和消耗很重！第二，这么玩儿，不是分布式的，就<strong>没有扩展性可言</strong>了，如果某个 queue 负载很重，你加机器，新增的机器也包含了这个 queue 的所有数据，并<strong>没有办法线性扩展</strong>你的 queue。你想，如果这个 queue 的数据量很大，大到这个机器上的容量无法容纳了，此时该怎么办呢？</p>
+<h3 id="Kafka-的高可用性"><a href="#Kafka-的高可用性" class="headerlink" title="Kafka 的高可用性"></a>Kafka 的高可用性</h3><p>Kafka 一个最基本的架构认识：由多个 broker 组成，每个 broker 是一个节点；你创建一个 topic，这个 topic 可以划分为多个 partition，每个 partition 可以存在于不同的 broker 上，每个 partition 就放一部分数据。</p>
+<p>这就是<strong>天然的分布式消息队列</strong>，就是说一个 topic 的数据，是<strong>分散放在多个机器上的，每个机器就放一部分数据</strong>。</p>
+<p>实际上 RabbmitMQ 之类的，并不是分布式消息队列，它就是传统的消息队列，只不过提供了一些集群、HA(High Availability, 高可用性) 的机制而已，因为无论怎么玩儿，RabbitMQ 一个 queue 的数据都是放在一个节点里的，镜像集群下，也是每个节点都放这个 queue 的完整数据。</p>
+<p>Kafka 0.8 以前，是没有 HA 机制的，就是任何一个 broker 宕机了，那个 broker 上的 partition 就废了，没法写也没法读，没有什么高可用性可言。</p>
+<p>比如说，我们假设创建了一个 topic，指定其 partition 数量是 3 个，分别在三台机器上。但是，如果第二台机器宕机了，会导致这个 topic 的 1/3 的数据就丢了，因此这个是做不到高可用的。</p>
+<p><img src="https://raw.githubusercontent.com/doocs/advanced-java/master/images/kafka-before.png" alt="kafka-before"></p>
+<p>Kafka 0.8 以后，提供了 HA 机制，就是 replica（复制品） 副本机制。每个 partition 的数据都会同步到其它机器上，形成自己的多个 replica 副本。所有 replica 会选举一个 leader 出来，那么生产和消费都跟这个 leader 打交道，然后其他 replica 就是 follower。写的时候，leader 会负责把数据同步到所有 follower 上去，读的时候就直接读 leader 上的数据即可。只能读写 leader？很简单，<strong>要是你可以随意读写每个 follower，那么就要 care 数据一致性的问题</strong>，系统复杂度太高，很容易出问题。Kafka 会均匀地将一个 partition 的所有 replica 分布在不同的机器上，这样才可以提高容错性。</p>
+<p><img src="https://raw.githubusercontent.com/doocs/advanced-java/master/images/kafka-after.png" alt="kafka-after"></p>
+<p>这么搞，就有所谓的<strong>高可用性</strong>了，因为如果某个 broker 宕机了，没事儿，那个 broker上面的 partition 在其他机器上都有副本的。如果这个宕机的 broker 上面有某个 partition 的 leader，那么此时会从 follower 中<strong>重新选举</strong>一个新的 leader 出来，大家继续读写那个新的 leader 即可。这就有所谓的高可用性了。</p>
+<p><strong>写数据</strong>的时候，生产者就写 leader，然后 leader 将数据落地写本地磁盘，接着其他 follower 自己主动从 leader 来 pull 数据。一旦所有 follower 同步好数据了，就会发送 ack 给 leader，leader 收到所有 follower 的 ack 之后，就会返回写成功的消息给生产者。（当然，这只是其中一种模式，还可以适当调整这个行为）</p>
+<p><strong>消费</strong>的时候，只会从 leader 去读，但是只有当一个消息已经被所有 follower 都同步成功返回 ack 的时候，这个消息才会被消费者读到。</p>
+<p>看到这里，相信你大致明白了 Kafka 是如何保证高可用机制的了，对吧？不至于一无所知，现场还能给面试官画画图。要是遇上面试官确实是 Kafka 高手，深挖了问，那你只能说不好意思，太深入的你没研究过。</p>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">     
+            :)
+        </div>
+        <div class="author-panel text-center">
+            <img style="border-color: #00BCD4 #00BCD4 #00BCD4 #00BCD4" src="/imgs/logo.ico" width="140" height="140" alt="Kyle" class="author-image">
+            <p class="author-description"> 上边是一个头像 </p>
+        </div>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/4/">保证消息的可靠性传输</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/3/">保证消息不被重复消费</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/2/">保证消息队列的高可用</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/1/">MQ</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/3/24/">windows 像 linux 一样执行命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/2/16/">Centos7 基础命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/8/">搭了一天的服务,终于可以用了</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/12/5/">虚拟机Linux CentOS 桥接模式和NAT模式配置静态IP的完美方案</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/30/">Git 命令</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/10/19/">Find命令是Linux文件查找利器吗?</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/23/">Apache Thrift - 可伸缩的跨语言服务开发框架</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/3/">JVM 优化经验总结</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/8/">JVM 垃圾回收器工作原理及使用实例介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/4/11/">springboot相关配置</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/5/18/">用了一个月的mybatis总结</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/9/">JSON格式化</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/2/">保证消息队列的高可用</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/3/">保证消息不被重复消费</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/4/">保证消息的可靠性传输</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class>
+                    <a href="/2019/8/2/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class>
+                    <a href="/2019/8/2/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class>
+                    <a href="/2019/8/2/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/linux/" style="font-size: 8.329693560295649px;" class="tag-cloud-link">linux</a>
+    
+    <a href="/tags/mysql/" style="font-size: 11.553242904405613px;" class="tag-cloud-link">mysql</a>
+    
+    <a href="/tags/article/" style="font-size: 10.32484086186551px;" class="tag-cloud-link">article</a>
+    
+    <a href="/tags/spring/" style="font-size: 16.072970205865023px;" class="tag-cloud-link">spring</a>
+    
+    <a href="/tags/jvm/" style="font-size: 16.29093287987549px;" class="tag-cloud-link">jvm</a>
+    
+    <a href="/tags/code/" style="font-size: 8.750756768601411px;" class="tag-cloud-link">code</a>
+    
+    <a href="/tags/mybatis/" style="font-size: 8.533342496069352px;" class="tag-cloud-link">mybatis</a>
+    
+    <a href="/tags/ElasticSearch/" style="font-size: 16.16939849427351px;" class="tag-cloud-link">ElasticSearch</a>
+    
+    <a href="/tags/docker/" style="font-size: 14.11990101554283px;" class="tag-cloud-link">docker</a>
+    
+    <a href="/tags/thinking/" style="font-size: 16.013822779800226px;" class="tag-cloud-link">thinking</a>
+    
+    <a href="/tags/tools/" style="font-size: 12.691889169473132px;" class="tag-cloud-link">tools</a>
+    
+    <a href="/tags/ubuntu/" style="font-size: 19.384122926345277px;" class="tag-cloud-link">ubuntu</a>
+    
+    <a href="/tags/centos/" style="font-size: 17.771281368433606px;" class="tag-cloud-link">centos</a>
+    
+    <a href="/tags/command/" style="font-size: 16.44197629174782px;" class="tag-cloud-link">command</a>
+    
+    <a href="/tags/全文检索/" style="font-size: 10.978102290742441px;" class="tag-cloud-link">全文检索</a>
+    
+    <a href="/tags/消息队列/" style="font-size: 14.703120716724893px;" class="tag-cloud-link">消息队列</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://www.pexels.com/" target="_blank">pexels</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://user.qzone.qq.com/1585056329/" target="_blank">qq空间</a>
+    </li>
+    
+    <li>
+        <a href="https://honghuhu.github.io/note" target="_blank">私有便签墙</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <!-- <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2015 20iD
+    </div>
+</footer> -->
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+
+
+    <!--代码高亮插件,适用于所有主流编程语言，兼容性好，多种多样的预设样式-->
+    <link rel="stylesheet" href="/js/highlight/styles/atom-one-dark-reasonable.css">
+    <!--<script src="/js/highlight/highlight.pack.js"></script> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script src="/js/blog.js"></script>
+
+
+<script>
+    window.hot_posts_count = '10'
+    window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
+
+
+</html>
