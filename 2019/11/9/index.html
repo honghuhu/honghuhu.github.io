@@ -13,10 +13,10 @@
     
     
     
-    <!--<title>categories: 数据库 | </title>-->
+    <!--<title>IntelliJ IDEA 插件 HTTP Client | IntelliJ IDEA 插件 HTTP Client</title>-->
     <title>
     
-        文章杂货铺
+        IntelliJ IDEA 插件 HTTP Client
     
     </title>
     <link href="https://honghuhu.github.io" rel="”prefetch”">
@@ -89,7 +89,7 @@
                 
                 
                 
-                <li class="current">
+                <li class>
                     <a href="/categories">
                         <i class="fa fa-list"></i>分类
                     </a>
@@ -120,19 +120,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-category">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://honghuhu.github.io">文章杂货铺</a>
         >
-        <span>目录</span>
+        <span>IntelliJ IDEA 插件 HTTP Client</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/categories/数据库/index.html">数据库</a>
+                <a href="/2019/11/9/">IntelliJ IDEA 插件 HTTP Client</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/开发工具/">开发工具</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-11-09
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -140,33 +159,60 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/categories/数据库/index.html">数据库</a>
+                    <a href="/2019/11/9/">IntelliJ IDEA 插件 HTTP Client</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-11-09
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/开发工具/">开发工具</a>
+                
+                
+                
+                <i class="fa fa-eye"></i>
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/2018/9/28/">MySql唯一键重复的处理</a>
-            <br>
-            
-            <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
-            <br>
-            
-            <a href="/2018/8/6/">用户昵称允许设置 emoji 😄️</a>
-            <br>
-            
-            <a href="/2018/3/20/">mysqlBatch</a>
-            <br>
-            
-            <a href="/2018/3/8/">shell 脚本中 执行mysql查询语句并将结果导出excel中，表内容与表头别名中文乱码问题</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <p><a href="https://my.oschina.net/niithub/blog/1920390" target="_blank" rel="noopener">文章来源</a></p>
+<h3 id="idea-自带工具httpClient-发请求方式"><a href="#idea-自带工具httpClient-发请求方式" class="headerlink" title="idea 自带工具httpClient 发请求方式"></a>idea 自带工具httpClient 发请求方式</h3><h5 id="注：只写我自己喜欢的方式"><a href="#注：只写我自己喜欢的方式" class="headerlink" title="注：只写我自己喜欢的方式"></a>注：只写我自己喜欢的方式</h5><h5 id="1-创建请求文件"><a href="#1-创建请求文件" class="headerlink" title="1. 创建请求文件"></a>1. 创建请求文件</h5><ul>
+<li>文件名称格式为 <code>xxx.http</code>  可以存放到任何目录</li>
+</ul>
+<h5 id="2-编写全局环境配置文件-（http-client-env-json-rest-client-env-json）文件需放到当前工作目录空间"><a href="#2-编写全局环境配置文件-（http-client-env-json-rest-client-env-json）文件需放到当前工作目录空间" class="headerlink" title="2. 编写全局环境配置文件 （http-client.env.json || rest-client.env.json）文件需放到当前工作目录空间"></a>2. 编写全局环境配置文件 （<code>http-client.env.json</code> || <code>rest-client.env.json</code>）文件需放到当前工作目录空间</h5><pre><code class="json">{
+  &quot;test&quot;: {         # 测试环境网关地址
+    &quot;host&quot;: &quot;10.250.140.252:8880&quot;,
+    &quot;authorization&quot;: &quot;&quot;
+  },
+  &quot;local-api&quot;: {    # 本地网关地址
+    &quot;host&quot;: &quot;localhost:8880&quot;,
+    &quot;authorization&quot;: &quot;&quot;
+  },
+  &quot;local-manage&quot;: { # 本地manage服务地址
+    &quot;host&quot;: &quot;localhost:8980&quot;
+  }
+}
+</code></pre>
+<h5 id="3-编写统一请求到-xxx-http-文件中"><a href="#3-编写统一请求到-xxx-http-文件中" class="headerlink" title="3. 编写统一请求到 xxx.http 文件中"></a>3. 编写统一请求到 <code>xxx.http</code> 文件中</h5><pre><code>GET {{host}}/ttt/ttt/ttt?pageNum=1&amp;pageSize=10
+
+POST {{host}}/xxx/xxx/xxx
+Content-Type: application/json
+authorization: {{authorization}}
+
+{&quot;name&quot;:&quot;xxx&quot;}
+</code></pre><h4 id="4-发请求"><a href="#4-发请求" class="headerlink" title="4. 发请求"></a>4. 发请求</h4><ul>
+<li>点击请求方式前的 绿色三角形</li>
+<li>选择环境发起请求<br><img src="https://s2.ax1x.com/2019/11/09/MmE6Lq.png" alt="例如:"></li>
+</ul>
+<h4 id="5-更改环境中参数值-ctrl-单击请求中的环境参数"><a href="#5-更改环境中参数值-ctrl-单击请求中的环境参数" class="headerlink" title="5. 更改环境中参数值 ctrl + 单击请求中的环境参数"></a>5. 更改环境中参数值 <code>ctrl + 单击请求中的环境参数</code></h4><h2 id="idea工作目录"><a href="#idea工作目录" class="headerlink" title="idea工作目录"></a>idea工作目录</h2><h5 id="在-idea-工作空间下的-scratches-and-consoles-gt-Scratches-文件夹下存放的文件，可以在任一工作空间查看"><a href="#在-idea-工作空间下的-scratches-and-consoles-gt-Scratches-文件夹下存放的文件，可以在任一工作空间查看" class="headerlink" title="在 idea 工作空间下的 scratches and consoles -&gt; Scratches 文件夹下存放的文件，可以在任一工作空间查看"></a>在 idea 工作空间下的 scratches and consoles -&gt; Scratches 文件夹下存放的文件，可以在任一工作空间查看</h5>
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -283,7 +329,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/19/">Mybatis与Hibernate</a>
+                    <a href="/2018/3/8/">shell 脚本中 执行mysql查询语句并将结果导出excel中，表内容与表头别名中文乱码问题</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/3/3/">Hibernate中get和load方法的区别</a>
                 </span>
             </li>
             
@@ -295,31 +347,31 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/23/">Apache Thrift - 可伸缩的跨语言服务开发框架</a>
+                    <a href="/2018/8/8/">Mybatis查询缓存引起的问题</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/26/">项目配置运行</a>
+                    <a href="/2018/8/29/">用Docker构建、运行发布一个SpringBoot应用</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/4/11/">springboot相关配置</a>
+                    <a href="/2018/9/28/">MySql唯一键重复的处理</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
+                    <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/10/9/">JSON格式化</a>
+                    <a href="/2018/10/27/">Spring中@Async注解</a>
                 </span>
             </li>
             
@@ -331,13 +383,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/8/3/">保证消息不被重复消费</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2019/11/9/">IntelliJ IDEA 插件 HTTP Client</a>
+                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
                 </span>
             </li>
             
@@ -350,51 +396,51 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class>
-                    <a href="/categories/数据库/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2019/11/9/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class>
-                    <a href="/categories/数据库/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2019/11/9/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class>
-                    <a href="/categories/数据库/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2019/11/9/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/linux/" style="font-size: 17.267014087588258px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 13.687860393068654px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/mysql/" style="font-size: 8.861745017706564px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 11.882720790079194px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/article/" style="font-size: 12.816125528623015px;" class="tag-cloud-link">article</a>
+    <a href="/tags/article/" style="font-size: 14.544126063736226px;" class="tag-cloud-link">article</a>
     
-    <a href="/tags/spring/" style="font-size: 18.729323030168427px;" class="tag-cloud-link">spring</a>
+    <a href="/tags/spring/" style="font-size: 9.884357098445486px;" class="tag-cloud-link">spring</a>
     
-    <a href="/tags/jvm/" style="font-size: 14.031737383502819px;" class="tag-cloud-link">jvm</a>
+    <a href="/tags/jvm/" style="font-size: 14.444080726184698px;" class="tag-cloud-link">jvm</a>
     
-    <a href="/tags/code/" style="font-size: 18.107099788592848px;" class="tag-cloud-link">code</a>
+    <a href="/tags/code/" style="font-size: 11.662102323232062px;" class="tag-cloud-link">code</a>
     
-    <a href="/tags/mybatis/" style="font-size: 12.606666165113522px;" class="tag-cloud-link">mybatis</a>
+    <a href="/tags/mybatis/" style="font-size: 15.059087467262472px;" class="tag-cloud-link">mybatis</a>
     
-    <a href="/tags/ElasticSearch/" style="font-size: 8.423150298894218px;" class="tag-cloud-link">ElasticSearch</a>
+    <a href="/tags/ElasticSearch/" style="font-size: 11.71006014300534px;" class="tag-cloud-link">ElasticSearch</a>
     
-    <a href="/tags/docker/" style="font-size: 16.855984425653666px;" class="tag-cloud-link">docker</a>
+    <a href="/tags/docker/" style="font-size: 18.890934467783502px;" class="tag-cloud-link">docker</a>
     
-    <a href="/tags/thinking/" style="font-size: 15.727818334805448px;" class="tag-cloud-link">thinking</a>
+    <a href="/tags/thinking/" style="font-size: 8.44466991183969px;" class="tag-cloud-link">thinking</a>
     
-    <a href="/tags/tools/" style="font-size: 15.27713924764802px;" class="tag-cloud-link">tools</a>
+    <a href="/tags/tools/" style="font-size: 9.419794136794982px;" class="tag-cloud-link">tools</a>
     
-    <a href="/tags/ubuntu/" style="font-size: 19.799403640191468px;" class="tag-cloud-link">ubuntu</a>
+    <a href="/tags/ubuntu/" style="font-size: 16.093522299149583px;" class="tag-cloud-link">ubuntu</a>
     
-    <a href="/tags/command/" style="font-size: 10.362553085632166px;" class="tag-cloud-link">command</a>
+    <a href="/tags/command/" style="font-size: 16.833268068663212px;" class="tag-cloud-link">command</a>
     
-    <a href="/tags/centos/" style="font-size: 18.737231316391075px;" class="tag-cloud-link">centos</a>
+    <a href="/tags/centos/" style="font-size: 19.28407998079862px;" class="tag-cloud-link">centos</a>
     
-    <a href="/tags/全文检索/" style="font-size: 14.896554314555443px;" class="tag-cloud-link">全文检索</a>
+    <a href="/tags/全文检索/" style="font-size: 13.138251713655219px;" class="tag-cloud-link">全文检索</a>
     
-    <a href="/tags/消息队列/" style="font-size: 11.543600974058526px;" class="tag-cloud-link">消息队列</a>
+    <a href="/tags/消息队列/" style="font-size: 17.248683466708734px;" class="tag-cloud-link">消息队列</a>
     
-    <a href="/tags/开发工具/" style="font-size: 8.019348877774906px;" class="tag-cloud-link">开发工具</a>
+    <a href="/tags/开发工具/" style="font-size: 11.565440722405432px;" class="tag-cloud-link">开发工具</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
