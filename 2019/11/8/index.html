@@ -169,12 +169,12 @@
     <div class="content-article">
         <h5 id="文件会存放到-idea-sh-startCore-sh"><a href="#文件会存放到-idea-sh-startCore-sh" class="headerlink" title="文件会存放到 .idea/sh/startCore.sh"></a>文件会存放到 .idea/sh/startCore.sh</h5><pre><code># 启动项目前 mvn clean install
 # 查看进程 &lt;Linux&gt; ps -aux|grep java; lsof -i:8806/|\ &lt;win&gt; ps |grep java
-# cd /d/workspace/aiCloudCenter/
+# cd /xx/server/
 # git pull
 # nohup mvn -f aiEurekaServer spring-boot:run &gt; /dev/null 2&gt;&amp;1 &amp;
 # nohup mvn -f aiConfigServer spring-boot:run &gt; /dev/null 2&gt;&amp;1 &amp;
-nohup java -jar /d/workspace/aiCloudCenter/aiEurekaServer/target/aiEureakService.jar &gt; /dev/null 2&gt;&amp;1 &amp;
-nohup java -jar /d/workspace/aiCloudCenter/aiConfigServer/target/aihotel-config.jar &gt; /dev/null 2&gt;&amp;1 &amp;
+nohup java -jar /xxx/server/target/aiEureakService.jar &gt; /dev/null 2&gt;&amp;1 &amp;
+nohup java -jar /xxx/server/target/aihotel-config.jar &gt; /dev/null 2&gt;&amp;1 &amp;
 </code></pre><ul>
 <li>idea terminal 配置 gitbash</li>
 <li>idea 中打开 terminal</li>
@@ -301,31 +301,31 @@ nohup java -jar /d/workspace/aiCloudCenter/aiConfigServer/target/aihotel-config.
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/8/">shell 脚本中 执行mysql查询语句并将结果导出excel中，表内容与表头别名中文乱码问题</a>
+                    <a href="/2018/3/26/">项目配置运行</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/3/">Hibernate中get和load方法的区别</a>
+                    <a href="/2018/8/10/">SpringBoot 读取yaml文件</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/13/">Linux传输命令</a>
+                    <a href="/2018/8/2/">jvm排查问题心得</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/4/9/">mybatis深入理解(一)之 (#与$) 区别以及 sql 预编译</a>
+                    <a href="/2018/9/28/">MySql唯一键重复的处理</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/8/8/">Mybatis查询缓存引起的问题</a>
+                    <a href="/2018/9/1/">用Spring Cloud和Docker构建微服务</a>
                 </span>
             </li>
             
@@ -337,25 +337,25 @@ nohup java -jar /d/workspace/aiCloudCenter/aiConfigServer/target/aihotel-config.
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/10/9/">JSON格式化</a>
+                    <a href="/2018/10/27/">Spring中@Async注解</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/2/16/">Centos7 基础命令</a>
+                    <a href="/2018/12/5/">虚拟机Linux CentOS 桥接模式和NAT模式配置静态IP的完美方案</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
+                    <a href="/2019/8/4/">保证消息的可靠性传输</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/8/3/">保证消息不被重复消费</a>
+                    <a href="/2019/11/8/">SpringCloud微服务开发中后台启动公共服务</a>
                 </span>
             </li>
             
@@ -380,39 +380,39 @@ nohup java -jar /d/workspace/aiCloudCenter/aiConfigServer/target/aihotel-config.
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/linux/" style="font-size: 14.274579868996042px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 18.99757935826395px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/mysql/" style="font-size: 9.46966918575695px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 13.500022674011184px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/article/" style="font-size: 12.139344109820339px;" class="tag-cloud-link">article</a>
+    <a href="/tags/article/" style="font-size: 19.877640759190754px;" class="tag-cloud-link">article</a>
     
-    <a href="/tags/spring/" style="font-size: 12.373896288747229px;" class="tag-cloud-link">spring</a>
+    <a href="/tags/spring/" style="font-size: 9.786830993739038px;" class="tag-cloud-link">spring</a>
     
-    <a href="/tags/jvm/" style="font-size: 16.18779246165206px;" class="tag-cloud-link">jvm</a>
+    <a href="/tags/jvm/" style="font-size: 14.905512973484504px;" class="tag-cloud-link">jvm</a>
     
-    <a href="/tags/code/" style="font-size: 13.567946757024156px;" class="tag-cloud-link">code</a>
+    <a href="/tags/code/" style="font-size: 12.284189182141182px;" class="tag-cloud-link">code</a>
     
-    <a href="/tags/mybatis/" style="font-size: 10.768406576859517px;" class="tag-cloud-link">mybatis</a>
+    <a href="/tags/mybatis/" style="font-size: 17.626010357160347px;" class="tag-cloud-link">mybatis</a>
     
-    <a href="/tags/ElasticSearch/" style="font-size: 18.77629810728502px;" class="tag-cloud-link">ElasticSearch</a>
+    <a href="/tags/ElasticSearch/" style="font-size: 15.066277827659281px;" class="tag-cloud-link">ElasticSearch</a>
     
-    <a href="/tags/docker/" style="font-size: 8.537638944533501px;" class="tag-cloud-link">docker</a>
+    <a href="/tags/docker/" style="font-size: 13.051464564332367px;" class="tag-cloud-link">docker</a>
     
-    <a href="/tags/thinking/" style="font-size: 19.547902691867044px;" class="tag-cloud-link">thinking</a>
+    <a href="/tags/thinking/" style="font-size: 13.626246498716954px;" class="tag-cloud-link">thinking</a>
     
-    <a href="/tags/tools/" style="font-size: 14.894784114772886px;" class="tag-cloud-link">tools</a>
+    <a href="/tags/tools/" style="font-size: 12.824765571914874px;" class="tag-cloud-link">tools</a>
     
-    <a href="/tags/ubuntu/" style="font-size: 18.20415345673942px;" class="tag-cloud-link">ubuntu</a>
+    <a href="/tags/ubuntu/" style="font-size: 17.187155843354798px;" class="tag-cloud-link">ubuntu</a>
     
-    <a href="/tags/centos/" style="font-size: 16.45921149851087px;" class="tag-cloud-link">centos</a>
+    <a href="/tags/centos/" style="font-size: 18.084135322798936px;" class="tag-cloud-link">centos</a>
     
-    <a href="/tags/command/" style="font-size: 16.248872827455315px;" class="tag-cloud-link">command</a>
+    <a href="/tags/command/" style="font-size: 8.38584175045388px;" class="tag-cloud-link">command</a>
     
-    <a href="/tags/全文检索/" style="font-size: 11.515415542194106px;" class="tag-cloud-link">全文检索</a>
+    <a href="/tags/全文检索/" style="font-size: 13.478817133568954px;" class="tag-cloud-link">全文检索</a>
     
-    <a href="/tags/消息队列/" style="font-size: 15.653920224917663px;" class="tag-cloud-link">消息队列</a>
+    <a href="/tags/消息队列/" style="font-size: 16.818094468175165px;" class="tag-cloud-link">消息队列</a>
     
-    <a href="/tags/开发工具/" style="font-size: 17.153511882213166px;" class="tag-cloud-link">开发工具</a>
+    <a href="/tags/开发工具/" style="font-size: 8.611294430975159px;" class="tag-cloud-link">开发工具</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
