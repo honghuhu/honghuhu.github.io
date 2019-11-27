@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../note/js/one-sentence-everyday/m-quotes-preview.css">
 </head>
 <body class="mobile-preview">
-<div class="quote-preview" style="background-image: url('https://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302'); opacity: 1;">
+<div class="quote-preview">
     <div class="bottom-bg"></div>
     <div class="background-banner"><img class="logo" src>
         <div class="quote">
@@ -27,5 +27,10 @@
 <audio class="tts-music" src controls autoplay hidden="true">
 <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="../note/js/one-sentence-everyday/m-quotes-preview.js"></script>
+<script>
+        $.get('https://jsonp.afeld.me/?url=http%3A%2F%2Fcn.bing.com%2FHPImageArchive.aspx%3Fformat%3Djs%26idx%3D0%26n%3D1', function(data){
+            document.body.style.backgroundImage = "url(https://www.bing.com" + data.images[0].url + ")";            
+    });
+    </script>
 </audio></body>
 </html>
