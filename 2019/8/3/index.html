@@ -179,7 +179,10 @@
         </center>
     </div>
     <div class="content-article">
-        <h2 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h2><p>如何保证消息不被重复消费？或者说，如何保证消息消费的幂等性？</p>
+        <p>引用:</p>
+<ul>
+<li><a href="https://doocs.github.io/advanced-java/" target="_blank" rel="noopener">https://doocs.github.io/advanced-java/</a><h2 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h2>如何保证消息不被重复消费？或者说，如何保证消息消费的幂等性？</li>
+</ul>
 <h2 id="面试官心理分析"><a href="#面试官心理分析" class="headerlink" title="面试官心理分析"></a>面试官心理分析</h2><p>其实这是很常见的一个问题，这俩问题基本可以连起来问。既然是消费消息，那肯定要考虑会不会重复消费？能不能避免重复消费？或者重复消费了也别造成系统异常可以吗？这个是 MQ 领域的基本问题，其实本质上还是问你<strong>使用消息队列如何保证幂等性</strong>，这个是你架构里要考虑的一个问题。</p>
 <h2 id="面试题剖析"><a href="#面试题剖析" class="headerlink" title="面试题剖析"></a>面试题剖析</h2><p>回答这个问题，首先你别听到重复消息这个事儿，就一无所知吧，你<strong>先大概说一说可能会有哪些重复消费的问题</strong>。</p>
 <p>首先，比如 RabbitMQ、RocketMQ、Kafka，都有可能会出现消息重复消费的问题，正常。因为这问题通常不是 MQ 自己保证的，是由我们开发来保证的。挑一个 Kafka 来举个例子，说说怎么重复消费吧。</p>
@@ -324,37 +327,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/8/">shell 脚本中 执行mysql查询语句并将结果导出excel中，表内容与表头别名中文乱码问题</a>
+                    <a href="/2018/3/7/">java开发</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/20/">mysqlBatch</a>
+                    <a href="/2018/3/23/">Apache Thrift - 可伸缩的跨语言服务开发框架</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/3/19/">Mybatis与Hibernate</a>
+                    <a href="/2018/4/8/">JVM 垃圾回收器工作原理及使用实例介绍</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/4/3/">JVM 优化经验总结</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2018/8/2/">jvm排查问题心得</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2018/9/3/">百度脑图- 便捷的思维工具</a>
+                    <a href="/2018/9/28/">MySql唯一键重复的处理</a>
                 </span>
             </li>
             
@@ -366,7 +357,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/10/9/">JSON格式化</a>
+                    <a href="/2019/6/29/">在docker环境中通过 logstash 给 ES 注入数据</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/8/4/">保证消息的可靠性传输</a>
                 </span>
             </li>
             
@@ -379,6 +376,12 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2019/3/24/">windows 像 linux 一样执行命令</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/11/9/">IntelliJ IDEA 插件 HTTP Client</a>
                 </span>
             </li>
             
@@ -403,39 +406,39 @@
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/linux/" style="font-size: 18.11937320994994px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 8.558811809296085px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/mysql/" style="font-size: 17.504783128618616px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 13.833640984810225px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/article/" style="font-size: 15.083463191325702px;" class="tag-cloud-link">article</a>
+    <a href="/tags/article/" style="font-size: 18.70184887204189px;" class="tag-cloud-link">article</a>
     
-    <a href="/tags/spring/" style="font-size: 10.737906793663964px;" class="tag-cloud-link">spring</a>
+    <a href="/tags/spring/" style="font-size: 8.558724297794175px;" class="tag-cloud-link">spring</a>
     
-    <a href="/tags/jvm/" style="font-size: 11.676488657289557px;" class="tag-cloud-link">jvm</a>
+    <a href="/tags/jvm/" style="font-size: 19.173691014968057px;" class="tag-cloud-link">jvm</a>
     
-    <a href="/tags/code/" style="font-size: 18.628252942982563px;" class="tag-cloud-link">code</a>
+    <a href="/tags/code/" style="font-size: 18.10171263343728px;" class="tag-cloud-link">code</a>
     
-    <a href="/tags/mybatis/" style="font-size: 11.654725429909305px;" class="tag-cloud-link">mybatis</a>
+    <a href="/tags/mybatis/" style="font-size: 15.39110461824014px;" class="tag-cloud-link">mybatis</a>
     
-    <a href="/tags/ElasticSearch/" style="font-size: 15.712588699929963px;" class="tag-cloud-link">ElasticSearch</a>
+    <a href="/tags/ElasticSearch/" style="font-size: 9.32654606989232px;" class="tag-cloud-link">ElasticSearch</a>
     
-    <a href="/tags/docker/" style="font-size: 9.865610543930444px;" class="tag-cloud-link">docker</a>
+    <a href="/tags/docker/" style="font-size: 12.611594736011899px;" class="tag-cloud-link">docker</a>
     
-    <a href="/tags/thinking/" style="font-size: 17.46470704975478px;" class="tag-cloud-link">thinking</a>
+    <a href="/tags/thinking/" style="font-size: 11.341729139375623px;" class="tag-cloud-link">thinking</a>
     
-    <a href="/tags/tools/" style="font-size: 14.343745709178322px;" class="tag-cloud-link">tools</a>
+    <a href="/tags/tools/" style="font-size: 9.384520851086977px;" class="tag-cloud-link">tools</a>
     
-    <a href="/tags/ubuntu/" style="font-size: 18.859028233637503px;" class="tag-cloud-link">ubuntu</a>
+    <a href="/tags/ubuntu/" style="font-size: 19.048356430616764px;" class="tag-cloud-link">ubuntu</a>
     
-    <a href="/tags/centos/" style="font-size: 16.928547906926603px;" class="tag-cloud-link">centos</a>
+    <a href="/tags/全文检索/" style="font-size: 18.480804829796885px;" class="tag-cloud-link">全文检索</a>
     
-    <a href="/tags/command/" style="font-size: 10.15014333219081px;" class="tag-cloud-link">command</a>
+    <a href="/tags/消息队列/" style="font-size: 9.460464376199653px;" class="tag-cloud-link">消息队列</a>
     
-    <a href="/tags/全文检索/" style="font-size: 12.229135106093954px;" class="tag-cloud-link">全文检索</a>
+    <a href="/tags/centos/" style="font-size: 9.952499134111779px;" class="tag-cloud-link">centos</a>
     
-    <a href="/tags/消息队列/" style="font-size: 8.977053511229144px;" class="tag-cloud-link">消息队列</a>
+    <a href="/tags/command/" style="font-size: 10.074259000796403px;" class="tag-cloud-link">command</a>
     
-    <a href="/tags/开发工具/" style="font-size: 19.923159707180503px;" class="tag-cloud-link">开发工具</a>
+    <a href="/tags/开发工具/" style="font-size: 18.260392044075246px;" class="tag-cloud-link">开发工具</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
