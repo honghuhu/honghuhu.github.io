@@ -1,47 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Eye exercise</title>
-    <script src="html/js/jquery.min.js"></script>
-</head>
-<body>
 <style>
+    body{
+      background-color: rgb(0, 0, 0) !important
+    }
     canvas {
       display: block;
       margin: 0 auto;
-      border: 1px solid rgb(0, 255, 179);
+      /* border: 1px solid rgb(0, 255, 179); */
     }
   </style>
   <canvas id="canvas" width="700" height="700"></canvas>
   <script>
+    var width = 800;
+    var height = width;
     var canv = document.getElementById("canvas");
     var ctx = canv.getContext("2d");
-    var width = 700;
-    var height = width;
-    // 创建一个小球对象
+    canv.width = width;
+    canv.height = height;
+    // 小球对象
     var ball = {
       x: 100,
       y: 100,
       radius: 20,
-      xSpeed: -(Math.random() + 1).toFixed(2),
-      ySpeed: -(Math.random() + 1).toFixed(2),
-      incrementSpeed: 0.1,
+      xSpeed: -(Math.random()).toFixed(1),
+      ySpeed: -(Math.random()).toFixed(1),
+      incrementSpeed: 0.2,
       maxSpeed: -9
     };
-    // 定义绘制小球的方法
+    // 绘制小球的方法
     ball.draw = function () {
       ctx.beginPath();
       ctx.arc(this.x, this.y, 20, 0, Math.PI * 2, true);
       ctx.fillStyle = "rgb(29, 192, 143)"
       ctx.fill();
     };
-    // 定义小球运动的方法
+    // 小球运动的方法
     ball.move = function () {
       this.x = this.x + this.xSpeed;
       this.y = this.y + this.ySpeed;
     };
-    // 边界判断
+    // 判断边界
     ball.checkCanvas = function () {
       if (this.x < this.radius || this.x > width - this.radius) {
         this.xSpeed = this.xSpeed < 0 && this.xSpeed > this.maxSpeed ? this.xSpeed - this.incrementSpeed : this.xSpeed;
@@ -53,14 +50,14 @@
         console.log("x: " + this.xSpeed + ", y:" + this.ySpeed)
       }
     };
-    // 定时功能使得小球动起来, 每30ms执行一次
+    // 定时功能每1ms执行一次, 让小球运动
     setInterval(function () {
       ctx.clearRect(0, 0, width, height);
       ball.draw();
       ball.move();
       ball.checkCanvas();
       ctx.strokeRect(0, 0, width, height);
-    }, 5);
+    }, 1);
   </script>
 </body>
 </html>
