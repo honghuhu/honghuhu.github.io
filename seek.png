@@ -7,7 +7,7 @@
      {"key":"csp_Buka","name":"🌸真不卡","type":3,"api":"csp_Buka","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"csp_Cokemv","name":"🐮Cokemv","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"csp_GitCafe","name":"📜小纸条","type":3,"api":"csp_GitCafe","ext":"3386154490d04bf5a94dca0c7c487afd","searchable":1,"quickSearch":1,"filterable":0},
-    //  {"key":"csp_Alips","name":"🐱喵搜","type":3,"api":"csp_AliPanSou","ext":"3386154490d04bf5a94dca0c7c487afd","searchable":1,"quickSearch":1,"filterable":0},
+     {"key":"csp_AliPS","name":"🐱喵搜","type":3,"api":"csp_AliPS","ext":"3386154490d04bf5a94dca0c7c487afd","searchable":1,"quickSearch":1,"filterable":0},
      {"key":"FindZY","name":"🗃找资源","type":3,"api":"csp_FindZY","ext":"3386154490d04bf5a94dca0c7c487afd","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"csp_DiDuan","name":"⌛️低端影视","type":3,"api":"csp_Ddrk","searchable":1,"quickSearch":1,"filterable":0},
      {"key":"csp_Czsapp","name":"🚉厂长资源","type":3,"api":"csp_Czsapp","searchable":1,"quickSearch":1,"filterable":0},
@@ -150,7 +150,7 @@
      {"name":"人人迷(iqy)","type":0,"url":"https://jx.blbo.cc:4433/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"]}}],
      
     "flags": ["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili","le","duoduozy","renrenmi","优酷","芒果","腾讯","爱奇艺","奇艺","ltnb","rx","CL4K","xfyun","wuduzy"],
-    "spider":"https://honghuhu.github.io/seek/seek.jar;md5;e470fb16926ae5c2961358b167b155f5",
+    "spider":"https://honghuhu.github.io/seek/seek.jar;md5;7064b473dcedd9425497bdc8bc39d026",
     "ijk":[
      {"group":"软解码","options":[
      {"category":4,"name":"opensles","value":"0"},
