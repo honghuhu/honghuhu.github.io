@@ -150,7 +150,7 @@
      {"name":"人人迷(iqy)","type":0,"url":"https://jx.blbo.cc:4433/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"]}}],
      
     "flags": ["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili","le","duoduozy","renrenmi","优酷","芒果","腾讯","爱奇艺","奇艺","ltnb","rx","CL4K","xfyun","wuduzy"],
-    "spider":"https://honghuhu.github.io/seek/seek.jar;md5;7064b473dcedd9425497bdc8bc39d026",
+    "spider":"https://honghuhu.github.io/seek/seek.jar;md5;7a7e8073d59022b0de11aa135c60b05f",
     "ijk":[
      {"group":"软解码","options":[
      {"category":4,"name":"opensles","value":"0"},
