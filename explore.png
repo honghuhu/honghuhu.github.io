@@ -2,7 +2,8 @@
   /*-----------------------JAR包接口-----------------------*/
   "spider":"https://honghuhu.github.io/seek/0.jar;md5;f1119df4fc629e71103cc19e2c7b2338",
   /*-----------------------壁纸切换动漫接口(可替换)-----------------------*/
-  "wallpaper":"https://baotangguo.cn:8081",
+  /*"wallpaper":"https://baotangguo.cn:8081",*/
+  "wallpaper":"http://api.muvip.cn/api/bing",
   /*-----------------------配置数据源-----------------------*/
   "sites":[
     {"key":"csp_Kunyu77","name":"👒七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
