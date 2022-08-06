@@ -1,6 +1,7 @@
 {
     /*-----------------------JAR包接口-----------------------*/
-    "spider":"https://honghuhu.github.io/seek/0.jar;md5;f1119df4fc629e71103cc19e2c7b2338",
+    "spider":"https://honghuhu.github.io/seek/seek.jar;md5;7a7e8073d59022b0de11aa135c60b05f",
+    // "spider":"https://honghuhu.github.io/seek/0.jar;md5;f1119df4fc629e71103cc19e2c7b2338",
     /*-----------------------壁纸切换动漫接口(可替换)-----------------------*/
     /*"wallpaper":"https://baotangguo.cn:8081",*/
     "wallpaper":"http://api.muvip.cn/api/bing",
@@ -10,7 +11,7 @@
       {"key":"csp_SP360","name":"🎾360影视(SP)","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1},
       {"key":"csp_Kuaikan","name":"🎈快看影视(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/00000.jar"},
       {"key":"LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/00000.jar"},
-      {"key":"在线之家","name":"🏡在线之家","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/seek.jar"},
+      {"key":"在线之家","name":"🏡在线之家-测试(SP)","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"filterable":1},
       {"key":"csp_CZSPP","name":"🚉厂长影视(SP)","type":3,"api":"csp_CZSPP","searchable":1,"quickSearch":1,"filterable":1},
       {"key":"csp_Cokemv","name":"🐮Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/00000.jar"},
       {"key":"csp_Bttoo","name":"🍷两个BT(SP)","type":3,"api":"csp_Bttoo","searchable":1,"quickSearch":1,"filterable":1},
@@ -18,8 +19,8 @@
       {"key":"csp_LibVio","name":"🐻LibVio","type":3,"api":"csp_Lib","searchable":1,"quickSearch":1,"filterable":0,"jar":"https://honghuhu.github.io/seek/seek.jar"},
       {"key":"csp_Tkys","name":"🔥天空影视","type": 3,"api": "csp_Tkys","searchable": 1,"quickSearch": 1,"filterable": 1,"jar":"https://honghuhu.github.io/seek/00002.jar"},
       {"key":"csp_biubiu_影视工厂","name":"🎬影视工厂","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ysgc.png","jar":"https://honghuhu.github.io/seek/00001.jar" },
-      {"key":"csp_Zxzj","name":"🦉在线之家-测试(SP)","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/seek.jar"},
-      {"key":"csp_Buka","name":"🌸真不卡-测试(SP)","type":3,"api":"csp_Buka","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/seek.jar"},
+      {"key":"csp_Zxzj","name":"🦉在线之家-测试(SP)","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"filterable":1},
+      {"key":"csp_Buka","name":"🌸真不卡-测试(SP)","type":3,"api":"csp_Buka","searchable":1,"quickSearch":1,"filterable":1},
       {"key":"csp_Auete","name":"🚚Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://honghuhu.github.io/seek/00000.jar"},
       {"key":"csp_GitCafe","name":"📜小纸条","type":3,"api":"csp_GitCafe","ext":"b69cc7baca254c4cae386626bd950273","searchable":1,"quickSearch":1,"filterable":0,"jar":"https://honghuhu.github.io/seek/seek.jar"},
       {"key":"csp_AliPanSou","name":"🐱喵搜","type":3,"api":"csp_AliPanSou","ext":"b69cc7baca254c4cae386626bd950273","searchable":1,"quickSearch":1,"filterable":0,"jar":"https://honghuhu.github.io/seek/seek.jar"},
