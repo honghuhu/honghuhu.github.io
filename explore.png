@@ -1,6 +1,6 @@
 {
  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1659865081395-7d722159-2e94-4943-bc01-0439cc990e00.png;md5;7a7e8073d59022b0de11aa135c60b05f",
- "wallpaper":"http://api.muvip.cn/api/bing",
+ "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
  "sites":[
     {"key":"csp_Kunyu77","name":"👒七七","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_SP360","name":"🎾360影视","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1},
