@@ -1,5 +1,6 @@
 {
-  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660053998547-c8899ab6-764c-4bb4-905e-30334426f783.png;md5;06ed1a662fc19e4ea22f60f02770f4b6","wallpaper":"http://api.muvip.cn/api/bing",
+  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660053998547-c8899ab6-764c-4bb4-905e-30334426f783.png;md5;06ed1a662fc19e4ea22f60f02770f4b6",
+  "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
   "lives":[{
     "group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlYS5jb20vcWlhb2ppL2phci9yYXcvYnJhbmNoL21haW4vemIudHh0"]
   }]}],
