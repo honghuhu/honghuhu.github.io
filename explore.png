@@ -17,7 +17,7 @@
     {"key":"csp_Auete","name":"🚚Auete","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1659865177067-ec9cf97a-ace2-411e-abb0-0b94fca59dbd.png"},
     {"key":"csp_GitCafe","name":"📜小纸条","type":3,"api":"csp_GitCafe","ext":"8cc52476ad244f7cb817f90a5bcedae7","searchable":1,"quickSearch":1,"filterable":0},
     {"key":"csp_AliPanSou","name":"🐱喵搜","type":3,"api":"csp_AliPanSou","ext":"8cc52476ad244f7cb817f90a5bcedae7","searchable":1,"quickSearch":1,"filterable":0},
-    {"key":"FindZY","name":"🗃找资源","type":3,"api":"csp_FindZY","ext":"8cc52476ad244f7cb817f90a5bcedae7","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660899892130-21a45e7c-322c-47b5-ab8e-35b64c0fb8ad.png"},
+    {"key":"FindZY","name":"🗃找资源","type":3,"api":"csp_FindZY","ext":"8cc52476ad244f7cb817f90a5bcedae7","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"M3U8资源","name":"📌M3U8资源(官)","type":1,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/","searchable":1,"quickSearch":1},
     {"key":"天堂资源","name":"📌天堂资源(官)","type":1,"api":"http://vipmv.cc/api.php/provide/vod/","searchable":1,"quickSearch":1},
     {"key":"csp_gc","name":"📺官采资源","type":1,"api":"http://caiji.nxflv.com/api.php/provide/vod/?ac=list","playUrl":"parse:自动解析","categories":["国产剧","港台剧","日韩剧","欧美剧","综艺","动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","综艺频道"]},
