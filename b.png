@@ -47,7 +47,7 @@
     {"key":"Zhaozy","name":"😺找资源+原画(搜索)","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
     {"key":"csp_Alips","name":"🐱喵搜(搜索)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
     {"key":"AliPS","name":"🔍️盘搜〔SP〕","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
-    {"key":"push_agent","name":"😺推送(爱优腾/云盘/磁力)","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"8cc52476ad244f7cb817f90a5bcedae7","jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660899892130-21a45e7c-322c-47b5-ab8e-35b64c0fb8ad.png"},
+    {"key":"push_agent","name":"😺推送(爱优腾/云盘/磁力)","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
     {"key":"csp_huya","name":"🐯虎牙(XPF)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://9xi4o.tk/OneClickRun/MaooXP/huya2.json"},
     {"key":"csp_douyu","name":"🐠斗鱼(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"http://9xi4o.tk/OneClickRun/MaooXB/斗鱼.json"},
     {"key":"csp_Bili","name":"🅱哔哩套餐","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":"https://ftyyy.tk/json/Bili.json"},
