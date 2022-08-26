@@ -55,7 +55,7 @@
     {"key":"csp_xpath_cls","name":"🍭磁力搜索(XP)","type":3,"api":"csp_XPathFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitea.com/83225451/Tvbox/raw/branch/main/MaooXP/cls.json"},
     {"key":"csp_xpath_dyn","name":"🤗电影牛(XP)","type":3,"api":"csp_XPathFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitea.com/83225451/Tvbox/raw/branch/main/MaooXP/dyn.json"},
     {"key":"csp_xpath_Grab4K","name":"🤗Grab4K(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitea.com/83225451/Tvbox/raw/branch/main/MaooXP/Grab4K.json"},
-    {"key":"bdys","name":"📺哔嘀〔磁力测试〕","type":3,"api":"csp_XPbd","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ygyzy.github.io/api/XPbd/Bdys.json", "jar":"https://ygyzy.github.io/api/jar/kmys.jar;md5;c6c3abb8b47fc5509434a4cca224cd32"},
+    {"key":"bdys","name":"📺哔嘀磁力","type":3,"api":"csp_XPbd","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661499749336-3f3e7034-87b5-4dc4-81aa-2f3d840e38b6.png", "jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661499652191-18717721-0003-4974-8d3f-5d2f36bdcdf9.png;md5;c6c3abb8b47fc5509434a4cca224cd32"},
     {"key":"csp_xpath_音范丝磁力","name":"🐛音范丝磁力(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ftyyy.tk/MeowXP/yinfans.json"},
     {"key":"csp_xpath_wmkk","name":"👓完美看看〔XP〕","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://ygyzy.github.io/api/Xpath/wanmeikk.json"},
     {"key":"csp_xpath_kuqimv","name":"🎤酷奇MV(XP)","type":3,"api":"csp_XPath","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/freed@master/TVBox/MaooXP/kuqimv.json"},
