@@ -49,7 +49,7 @@
      {"key":"teng","name":"🐧腾(解析)","type":3,"api":"csp_QQ","searchable":1,"quickSearch":1,"filterable":1,"categories":["少儿","电视剧","电影","动漫","纪录片","知识","学堂","综艺"],"jar":"https://ftyyy.tk/jar/tim.jar;md5;3c40dbcb8082364e1c416ebc3e219e6a"},
      {"key":"360_spider","name":"📺360(解析)","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1},
      {"key":"mang","name":"🍋芒guo(解析)","type":3,"api":"csp_MGTV","searchable":1,"quickSearch":1,"filterable":1},
-     {"key":"csp_GitCafe","name":"🔖小纸条","type":3,"api":"csp_GitCafe","searchable":1,"quickSearch":1,"filterable":1,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+     {"key":"csp_Gitcafe","name":"🔖小纸条","type":3,"api":"csp_Gitcafe","searchable":1,"quickSearch":1,"filterable":1,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
      {"key":"Yisou","name":"🔍️易搜+原画(搜索)","type":3,"api":"csp_Yisou","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
      {"key":"Zhaozy","name":"🔍️找资源+原画(搜索)","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
      {"key":"csp_Alips","name":"🔍️喵搜(搜索)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
