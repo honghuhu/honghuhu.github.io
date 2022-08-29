@@ -1,13 +1,18 @@
 {
-  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660053998547-c8899ab6-764c-4bb4-905e-30334426f783.png;md5;06ed1a662fc19e4ea22f60f02770f4b6",
+  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661783197238-4699c187-5605-4700-9bb9-eac45d085d87.png;md5;1c1482ff646cc40e1f924ebe320822bc",
   "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
   "lives":[{
     "group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlYS5jb20vcWlhb2ppL2phci9yYXcvYnJhbmNoL21haW4vemIudHh0"]
   }]}],
   "sites":[
-    {"key":"T4","name":"T4🔍️","type":4,"api":"https://service-59u7dsoa-1308372858.gz.apigw.tencentcs.com/release/vod","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661772344881-0fdffff6-eb52-4c59-8f59-836e46805df7.png;md5;8c74980779810db0309ed15cdf2ba073"},
-    //{"key":"T4Ali","name":"Ali🔍️","type":4,"api":"https://t4.secan.icu/vod?sites=all&timeout=10","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"KanSJ_spider","name":"🐧看视界","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
+    {"key":"csp_Gitcafe","name":"🔖小纸条(SP)","type":3,"api":"csp_Gitcafe","searchable":1,"quickSearch":1,"filterable":1,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+    {"key":"Yisou","name":"🔍️易搜(SP)","type":3,"api":"csp_Yisou","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+    {"key":"Zhaozy","name":"🔍️找资源(SP)","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+    {"key":"csp_Alips","name":"🔍️喵搜(SP)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+    {"key":"AliPS","name":"🔍️盘搜(SP)","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"733296ec6b6e4accbd1443f193c2a1a2"},
+    {"key":"bdys","name":"⛱哔嘀磁力","type":3,"api":"csp_XPbd","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661499749336-3f3e7034-87b5-4dc4-81aa-2f3d840e38b6.png", "jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661647904696-f3478e0a-b1c3-4c07-80b9-a67d1a5643bf.png;md5;226db2fc833312b73b0bf57c7dd41484"},
+    {"key":"csp_xpath_yinfans","name":"⛱音范丝磁力","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://honghuhu.github.io/seek/ext/yinfans.png"},
     {"key":"Lezhu_spider","name":"🐷乐猪影视","api":"csp_Lezhu","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
     {"key":"293视频","name":"🐥293视频","type":3,"api":"csp_SP293","searchable":1,"quickSearch":1,"filterable":1,"ext":""},
     {"key":"Smdyy_spider","name":"🐴神马影视","api":"csp_Smdyy","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
@@ -27,9 +32,6 @@
     {"key":"csp_Cokemv","name":"🌾Cokemv","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"在线之家","name":"🦄在线之家","type":3,"api":"csp_Zxzj","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_BBB","name":"🌾哔哩哔哩","type":3,"api":"csp_Bili","searchable":0,"quickSearch":0,"filterable":1,"ext":"https://gitea.com/qiaoji/jar/raw/branch/main/bili.json"},
-    {"key":"AliPS","name":"🌾盘搜","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":1,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
-    {"key":"Gitcafe","name":"🌾小纸条","type":3,"api":"csp_GitCafe","searchable":1,"quickSearch":1,"filterable":1,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
-    {"key":"FindZY","name":"🌾找资源","type":3,"api":"csp_FindZY","searchable":1,"quickSearch":1,"filterable":1,"ext":"8cc52476ad244f7cb817f90a5bcedae7"},
     {"key":"push_agent","name":"🎯推送","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"8cc52476ad244f7cb817f90a5bcedae7","jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1660899892130-21a45e7c-322c-47b5-ab8e-35b64c0fb8ad.png"},
     {"key":"csp_biubiu_影视工厂","name":"🍓影视工厂(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://freed.yuanhsing.cf/TVBox/MaooXB2/影视工厂.json"},
     {"key":"csp_biubiu_555电影","name":"🍓555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://freed.yuanhsing.cf/TVBox/MaooXB2/555电影.json"},
