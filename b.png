@@ -5,6 +5,8 @@
     "group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlYS5jb20vcWlhb2ppL2phci9yYXcvYnJhbmNoL21haW4vemIudHh0"]
   }]}],
   "sites":[
+    {"key":"T4","name":"T4🔍️","type":4,"api":"https://service-59u7dsoa-1308372858.gz.apigw.tencentcs.com/release/vod","searchable":1,"quickSearch":1,"filterable":1,"jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1661772344881-0fdffff6-eb52-4c59-8f59-836e46805df7.png;md5;8c74980779810db0309ed15cdf2ba073"},
+    {"key":"T4","name":"Ali🔍️","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=733296ec6b6e4accbd1443f193c2a1a2&timeout=10","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"KanSJ_spider","name":"🐧看视界","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
     {"key":"Lezhu_spider","name":"🐷乐猪影视","api":"csp_Lezhu","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":""},
     {"key":"293视频","name":"🐥293视频","type":3,"api":"csp_SP293","searchable":1,"quickSearch":1,"filterable":1,"ext":""},
