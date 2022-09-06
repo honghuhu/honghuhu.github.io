@@ -32,7 +32,7 @@
 {"key":"py_xmaomi","name":"py┃猫咪","type":3,"api":"py_xmaomi","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://honghuhu.github.io/seek/pypy_xmaomi.py"},
 {"key":"py_zhaozy","name":"py┃找资源","type":3,"api":"py_zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/pypy_zhaozy.py"},
 {"key":"py_pansou","name":"py┃盘搜","type":3,"api":"py_pansou","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/pypy_pansou.py"},
-{"key":"push_agent","name":"py┃阿里","type":3,"api":"py_ali","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://honghuhu.github.io/seek/pypy_ali.py"}
+{"key":"push_agent","name":"py┃阿里","type":3,"api":"py_ali","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://honghuhu.github.io/seek/pypy_ali.py"},
 {"key":"mtv_pc_直播合集","name":"直播┃直播合集","type":3,"api":"csp_Yj1211","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"mtv_pc_293视频","name":"官方┃293视频","type":3,"api":"csp_SP293","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"mtv_pc_360影视","name":"官方┃360影视","type":3,"api":"csp_SP360","searchable":1,"quickSearch":1,"filterable":1},
@@ -43,7 +43,7 @@
 {"key":"mtv_pc_阿里盘搜","name":"搜索┃阿里盘搜","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"bd5aa9786b54497f8da9aad0c61cba02"},
 {"key":"mtv_pc_易搜资源","name":"搜索┃易搜资源","type":3,"api":"csp_Yiso","searchable":1,"quickSearch":1,"filterable":0,"ext":"bd5aa9786b54497f8da9aad0c61cba02"},
 {"key":"mtv_pc_找资源搜","name":"搜索┃找资源搜","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":1,"ext":"bd5aa9786b54497f8da9aad0c61cba02"},
-{"key":"push_agent","name":"搜索┃推送资源","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"bd5aa9786b54497f8da9aad0c61cba02"},
+{"key":"push_agent","name":"搜索┃推送资源","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"bd5aa9786b54497f8da9aad0c61cba02"}],
 "parses":[
 {"name":"聚合","type":3,"url":"Demo"},
 {"name":"并发","type":2,"url":"Parallel"},
