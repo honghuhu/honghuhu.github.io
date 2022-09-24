@@ -2,7 +2,9 @@
   "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1663682832719-b1904081-e9c1-4393-82a4-cbdd894e959e.png;md5;3D691EE14AFB7DD2AC3C7D70AE22C279",
   "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
   // https://github.com/nanos12/nanos12.github.io/blob/main/zb.txt
-  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9uYW5vczEyLmdpdGh1Yi5pby96Yi50eHQ="]}]}],
+  // https://raw.iqiq.io/Cyril0563/lanjing_live/main/TVbox_Free/LIVE/Free/tvbox_live.txt
+  // https://github.com/Cyril0563/lanjing_live/blob/main/TVbox_Free/LIVE/Free/tvbox_live.txt
+  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9yYXcuaXFpcS5pby9DeXJpbDA1NjMvbGFuamluZ19saXZlL21haW4vVFZib3hfRnJlZS9MSVZFL0ZyZWUvdHZib3hfbGl2ZS50eHQ="]}]}],
   "sites":[
     {"key":"csp_Auete","name":"🏝Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"T4","name":"🚗T4聚合","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=4acb3ad2f2254ba1b566279f7cd98ba3&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
