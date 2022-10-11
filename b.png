@@ -49,7 +49,6 @@
     {"key":"drpy_js_追剧喵","name":"追剧喵[DRPY]","type":3,"api":"https://ghproxy.com/https://raw.githubusercontent.com/ShadowDemon1997/CatVodSpiderJS/main/drpy.js","ext":"https://gitcode.net/qq_32394351/dr_py/-/raw/master/js/追剧喵.js"}
   ],
 "parses":[
-    {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"🐶keyu","type":1,"url":"http://newjiexi.gotka.top/keyu3.php?url=","ext":{"flag":["qq","腾讯","qiyi","iqiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
     {"name":"🐶ok","type":0,"url":"https://okjx.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
     {"name":"🐶json1","type":1,"url":"https://json.freejx.in/?url="},
