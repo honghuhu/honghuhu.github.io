@@ -1,7 +1,6 @@
 {
   "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1665966929340-f97efad7-d556-4e15-9958-bd9284a85ea5.png;md5;fc546c735827e5b3c2dfe91bfbe64350",
   "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
-  // https://github.com/nanos12/nanos12.github.io/blob/main/zb.txt
   // https://raw.iqiq.io/Cyril0563/lanjing_live/main/TVbox_Free/LIVE/Free/tvbox_live.txt
   // https://github.com/Cyril0563/lanjing_live/blob/main/TVbox_Free/LIVE/Free/tvbox_live.txt
   "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9uYW5vczEyLmdpdGh1Yi5pby96Yi50eHQ="]}]}],
