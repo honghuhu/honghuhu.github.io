@@ -21,7 +21,7 @@
     {"key":"Zhaozy","name":"🔍️找资源(SP)","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"fa34d51799d743899f4975830ea3aaff"},
     {"key":"csp_Alips","name":"🔍️喵搜(SP)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0,"ext":"fa34d51799d743899f4975830ea3aaff"},
     {"key":"AliPS","name":"🔍️盘搜(SP)","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"fa34d51799d743899f4975830ea3aaff"},
-    {"key":"KanSJ_spider","name":"🗽看视界(SP)","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1},
+    // {"key":"KanSJ_spider","name":"🗽看视界(SP)","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1},
     {"key":"csp_Lezhu","name":"🐷乐猪(SP)","type":3,"api":"csp_Lezhu","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_xbb_乐猪影视","name":"🐗乐猪影视","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/lzys.png"},
     {"key":"csp_xp_meiju56","name":"👒美剧网","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://ghproxy.com/https://raw.githubusercontent.com/wwz09/ubuntu/master/MaooXBXP/meiju562.json"},
