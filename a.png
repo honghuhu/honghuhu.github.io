@@ -310,12 +310,11 @@
   "parses":[
     {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"🐶keyu","type":1,"url":"http://newjiexi.gotka.top/keyu3.php?url=","ext":{"flag":["qq","腾讯","qiyi","iqiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
-    {"name":"🐶dsxys","type":1,"url":"https://dsxys.live/?url=","ext":{"flag":["qq","腾讯","qiyi","iqiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+    {"name":"🐠dsxys","type":0,"url":"https://dsxys.live/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
     {"name":"🐶ok","type":0,"url":"https://okjx.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
     {"name":"🐶json1","type":1,"url":"https://json.freejx.in/?url="},
     {"name":"🐶json2","type":1,"url":"https://www.1920lgzy.top/json.php?url="},
     {"name":"🐶json3","type":1,"url":"https://json.freejson.xyz/hongtu.php?url="},
-    {"name":"🐠json4","type":1,"url":"http://211.99.99.236:4567/jhjson/ceshi.php?url="},
     {"name":"🦄1","type":0,"url":"http://rxjx.kuanjv.com/allm3u8.php?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
     {"name":"🐋2","type":0,"url":"https://play.fositv.com/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
     // {"name":"🐬3","type":0,"url":"https://player.maqq.cn/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.25"}}},
