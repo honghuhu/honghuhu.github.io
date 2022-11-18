@@ -8,7 +8,7 @@
     {"key":"csp_Auete","name":"🏝Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_xp_wnvod","name":"👒万能影视","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/wnvod.png"},
     {"key":"Yanet","name":"鸭奈飞","type":"3","api":"csp_Dora","searchable":"1","quickSearch":"1","filterable":"1","ext":"a369b1f623fe86605f1b029f0cf66349"},
-    {"key":"csp_xf_cs","name":"️FREEOK🍑(xBPQ)","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":0,
+    {"key":"csp_xf_cs","name":"️FREEOK🍑(xBPQ)","type":3,"api":"csp_xBPQ","searchable":1,"quickSearch":1,"filterable":0},
     //{"key":"csp_xbb_蓝光影视","name":"👒蓝光影视","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://ghproxy.com/https://raw.githubusercontent.com/wwz09/ubuntu/master/MaooXBXP/蓝光影视.json"},
     {"key":"T4","name":"🚗T4聚合","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=http://home.jundie.top:666/token.txt&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
     // {"key":"csp_Cokemv","name":"📕Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
