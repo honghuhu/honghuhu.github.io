@@ -1,14 +1,18 @@
 {
-  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669002521566-01097926-a5c9-4eae-acaa-424f17cc8a22.png;md5;fc546c735827e5b3c2dfe91bfbe64350",
+  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669013508522-c0b141a0-6743-4dd2-9c28-d41836f5f182.png;md5;6D99C46DE900F7B85BBFA8CED2D780B0",
   // "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
   // https://raw.iqiq.io/Cyril0563/lanjing_live/main/TVbox_Free/LIVE/Free/tvbox_live.txt
   // https://github.com/Cyril0563/lanjing_live/blob/main/TVbox_Free/LIVE/Free/tvbox_live.txt
-  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9yYXcuaXFpcS5pby9DeXJpbDA1NjMvbGFuamluZ19saXZlL21haW4vVFZib3hfRnJlZS9MSVZFL0ZyZWUvdHZib3hfbGl2ZS50eHQ="]}]}],
+  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://notabug.org/xingyuan/tv/raw/main/live.txt"]}]}],
   "sites":[
+    {"key":"drpy_js_腾讯","name":"腾讯(js)","type":3,"api":"https://notabug.org/xingyuan/tv/raw/main/drpy.js","ext":"https://notabug.org/xingyuan/tv/raw/main/js/腾讯.js"},
+    {"key":"drpy_js_优酷","name":"优酷(js)","type":3,"api":"https://notabug.org/xingyuan/tv/raw/main/drpy.js","ext":"https://notabug.org/xingyuan/tv/raw/main/js/优酷.js"},
     {"key":"csp_Auete","name":"🏝Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_xp_wnvod","name":"👒万能影视","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/wnvod.png"},
     {"key":"T4","name":"🚗T4聚合","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=http://home.jundie.top:666/token.txt&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
+    {"key":"drpy_js_鸭奈飞","name":"鸭奈飞(js)","type":3,"api":"https://notabug.org/xingyuan/tv/raw/main/drpy.js","ext":"https://notabug.org/xingyuan/tv/raw/main/js/鸭奈飞.js"},
     {"key": "drpy_js_cokemv","name": "📕cokemv(js)","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js","ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/cokemv.js"},
+    {"key":"drpy_js_dsx","name":"大师兄影视[js]","type":3,"api":"https://notabug.org/xingyuan/tv/raw/main/drpy.js","ext":"https://notabug.org/xingyuan/tv/raw/main/js/大师兄影视.js"},
     // {"key":"csp_Cokemv","name":"📕Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"Anime","name":"Anime","api":"csp_Anime1","type":3,"filterable":1,"quickSearch":1,"searchable":1},
     {"key":"农民","name":"💂农民","api":"csp_Nmys","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":"https://honghuhu.github.io/seek/ext/nnys.png","jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669003816155-0ac1cdb1-c13e-4bf8-b790-9149a66b19df.png;md5;83fb605345300da7c3d2c2f2a36c6cdc"},
@@ -212,6 +216,7 @@
   "parses":[
     {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"🐠dsxys","type":0,"url":"https://dsxys.live/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
+    {"name":"keyu","type":1,"url":"http://newjiexi.gotka.top/keyu3.php?url=","ext":{"header":{"User-Agent":"okhttp/4.1.0"}}},
     {"name":"🐶ok","type":0,"url":"https://okjx.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     {"name":"🐬3","type":1,"url":"http://rxjx.kuanjv.com/allm3u8.php?url="},
     {"name":"🐶json1","type":1,"url":"https://json.freejx.in/?url="},
