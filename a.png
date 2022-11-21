@@ -1,5 +1,5 @@
 {
-  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1665966929340-f97efad7-d556-4e15-9958-bd9284a85ea5.png;md5;fc546c735827e5b3c2dfe91bfbe64350",
+  "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669002521566-01097926-a5c9-4eae-acaa-424f17cc8a22.png;md5;fc546c735827e5b3c2dfe91bfbe64350",
   // "wallpaper":"http://api.muvip.cn/api/bing?rand=true",
   // https://raw.iqiq.io/Cyril0563/lanjing_live/main/TVbox_Free/LIVE/Free/tvbox_live.txt
   // https://github.com/Cyril0563/lanjing_live/blob/main/TVbox_Free/LIVE/Free/tvbox_live.txt
@@ -8,7 +8,10 @@
     {"key":"csp_Auete","name":"🏝Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_xp_wnvod","name":"👒万能影视","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/wnvod.png"},
     {"key":"T4","name":"🚗T4聚合","type":4,"api":"https://t4.secan.icu/vod?sites=all&ali_token=http://home.jundie.top:666/token.txt&timeout=10","searchable":1,"quickSearch":1,"filterable":0},
-    // {"key":"csp_Cokemv","name":"📕Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
+    {"key":"csp_Cokemv","name":"📕Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
+    {"key":"Anime","name":"Anime","api":"csp_Anime1","type":3,"filterable":1,"quickSearch":1,"searchable":1},
+    {"key":"农民","name":"💂农民","api":"csp_Nmys","type":3,"filterable":1,"quickSearch":1,"searchable":1,"ext":"https://honghuhu.github.io/seek/ext/nnys.png","jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669003816155-0ac1cdb1-c13e-4bf8-b790-9149a66b19df.png;md5;83fb605345300da7c3d2c2f2a36c6cdc"},
+    {"key":"Zjdr","name":"‍🏫追剧达人","api":"csp_Zjdr","type":3,"filterable":1,"quickSearch":1,"searchable":1,"jar":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669003816155-0ac1cdb1-c13e-4bf8-b790-9149a66b19df.png;md5;83fb605345300da7c3d2c2f2a36c6cdc"},
     // {"key":"csp_jihuang","name":"🍒剧荒(SP)","type":3,"api":"csp_Juhuang","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_77","name":"👒77(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
@@ -22,6 +25,7 @@
     {"key":"Zhaozy","name":"🔍️找资源(SP)","type":3,"api":"csp_Zhaozy","searchable":1,"quickSearch":1,"filterable":0,"ext":"http://home.jundie.top:666/token.txt"},
     {"key":"csp_Alips","name":"🔍️喵搜(SP)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0,"ext":"http://home.jundie.top:666/token.txt"},
     {"key":"AliPS","name":"🔍️盘搜(SP)","type":3,"api":"csp_AliPS","searchable":1,"quickSearch":1,"filterable":1,"ext":"http://home.jundie.top:666/token.txt"},
+    {"key": "drpy_js_大米星球","name": "🕵大米星球🕵","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js","ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/大米星球.js"},
     // {"key":"KanSJ_spider","name":"🗽看视界(SP)","api":"csp_KanSJ","type":3,"filterable":1,"quickSearch":1,"searchable":1},
     {"key":"csp_Lezhu","name":"🐷乐猪(SP)","type":3,"api":"csp_Lezhu","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"csp_xbb_乐猪影视","name":"🐗乐猪影视","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/lzys.png"},
@@ -209,6 +213,7 @@
     {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"🐠dsxys","type":0,"url":"https://dsxys.live/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     {"name":"🐶ok","type":0,"url":"https://okjx.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
+    {"name":"🐬3","type":1,"url":"http://rxjx.kuanjv.com/allm3u8.php?url="},
     {"name":"🐶json1","type":1,"url":"https://json.freejx.in/?url="},
     {"name":"🐶json2","type":1,"url":"https://www.1920lgzy.top/json.php?url="},
     {"name":"🐶json3","type":1,"url":"https://json.freejson.xyz/hongtu.php?url="},
