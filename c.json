@@ -88,13 +88,7 @@
       "api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js",
       "ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/007影视.js"
     },
-    {
-      "key": "drpy_js_cokemv",
-      "name": "🕵cokemv🕵",
-      "type": 3,
-      "api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js",
-      "ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/cokemv.js"
-    },
+    {"key": "drpy_js_cokemv","name": "🕵cokemv🕵","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js","ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/cokemv.js"},
     {
       "key": "drpy_js_drpy",
       "name": "🕵drpy🕵",
