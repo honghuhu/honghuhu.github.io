@@ -61,7 +61,7 @@
 //  "播放链接前缀": "https://www.ziziys.com",
  
 "线路二次截取": "",
-"线路数组": "data-dropdown-value&&</div>",
+"线路数组": "data-dropdown-value&&</div>||id=\"sort-item&&<div>",
 "线路标题": "<span>&&</small>"
 //  "是否启用播放线路名": "1",
 ///  "线路名是否二次截取": "0",
