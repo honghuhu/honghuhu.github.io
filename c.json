@@ -1,5 +1,6 @@
 //潇洒空间: https://cnvip.x10.mx/tv/01.txt
 // https://github.com/xingyuantv/tv/blob/main/tv.txt
+// https://gitcode.net/qq_32394351/dr_py/-/tree/master/js
 {
 "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669013508522-c0b141a0-6743-4dd2-9c28-d41836f5f182.png;md5;6D99C46DE900F7B85BBFA8CED2D780B0",
 "lives":[{"name":"直播","type":0,"epg":"http://epg.51zmt.top:8000/api/diyp/","url":"https://download.kstore.space/download/2863/live.txt"}],
@@ -7,11 +8,6 @@
 //"lives":[{"name":"直播(道长)","type":0,"url":"https://gitcode.net/qq_32394351/dr_py/-/raw/master/base/直播.txt"}],
 //"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9kb3dubG9hZC5rc3RvcmUuc3BhY2UvZG93bmxvYWQvMjg2My9saXZlLnR4dA=="]}]}],
 //EPG地址：http://epg.51zmt.top:8000/api/diyp/,
-//"epg":"http://epg.51zmt.top:8000/api/diyp/",
-//epg配置地址写入配置lives下 "epg":"epgUrl";同时兼容蜂蜜的带参epg配置
-//"spider":"https://link.jscdn.cn/lanzou/aHR0cHM6Ly93d2QubGFuem91bC5jb20vaUlUZG8wOWIzeHFk.jpg;md5;3d7299943c04fc5baebfdc8632762edd",
-//"spider":"clan://TVBox/0718.jar",
-//"clan://localhost/TVBOX/01.txt",
 "drives": [{"server":"","userName":"","password":"","type":"webdav"}],
 "wallpaper":"https://api.lr-jia.cn/api/dnmm",
 "sites": [
@@ -48,9 +44,6 @@
 {"key":"Dm84r","name":"🚒Dm84","api":"csp_Dm84","type":3,"filterable":1,"quickSearch":1,"searchable":1,"jar":"https://download.kstore.space/download/2863/cs.jar;md5;83fb605345300da7c3d2c2f2a36c6cdc"},
 {"key":"在线之家","name":"‍👨🏻‍💻在线之家","api":"csp_Zxzj","type":3,"filterable":1,"quickSearch":1,"searchable":1,"jar":"https://download.kstore.space/download/2863/cs.jar;md5;83fb605345300da7c3d2c2f2a36c6cdc"},
 
-//{"key":"csp_Wmkk","name":"💯完美看看","api":"csp_Wmkk","type":3,"filterable":1,"quickSearch":1,"searchable":1},
-//{"key":"Cokemv","name":"🦋Cokemv影视","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
-//{"key":"csp_LibVio","name":"🐱LibVio","type":3,"api":"csp_Lib","searchable":1,"quickSearch":1,"filterable":1},
 //=======================================================================================================
 {"key":"csp_IQIYI","name":"🥝爱","type":3,"api":"csp_IQIYI","searchable":0,"quickSearch":0,"filterable":0,"jar":"https://download.kstore.space/download/2863/xsxin.jar;md5;76ddd410eca67676f4c23a24ae4c7df7"},
 {"key":"csp_MGTV","name":"🥭芒","type":3,"api":"csp_MGTV","searchable":0,"quickSearch":0,"filterable":0,"jar":"https://download.kstore.space/download/2863/xsxin.jar;md5;76ddd410eca67676f4c23a24ae4c7df7"},
@@ -120,19 +113,8 @@
       "api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js",
       "ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/百忙无果.js"
     },
-    {
-      "key": "drpy_js_菜狗",
-      "name": "🕵菜狗🕵",
-      "type": 3,
-      "api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js",
-      "ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/菜狗.js"
-    },
-    {
-      "key": "drpy_js_大米星球",
-      "name": "🕵大米星球🕵",
-      "type": 3,
-      "api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js",
-      "ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/大米星球.js"
+    {"key": "drpy_js_菜狗","name": "🕵菜狗🕵","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js","ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/菜狗.js"},
+    {"key": "drpy_js_大米星球","name": "🕵大米星球🕵","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/yxcqr/CatVodSpiderJS/main/drpy.js","ext": "https://gitcdn.top/https://raw.githubusercontent.com/yxcqr/TVboxo/main/Js/大米星球.js"
     },
     {
       "key": "drpy_js_番茄影视",
