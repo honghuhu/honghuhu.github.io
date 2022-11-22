@@ -7,7 +7,7 @@
   "User": "User-Agent:Dart/2.14 (dart:io)",
   "shouye": "1",
 
-  "fenlei": "电影$/vodtype/20.html#电视剧$/vodtype/21.html#动漫$/vodshow/22.html#综艺$/vodshow/23.html#Netflix(剧)$/label/netflix.html", //网站列表的分类
+  "fenlei": "电影$/vodshow/20--------#电视剧$/vodshow/21--------#动漫$/vodshow/22--------#综艺$/vodshow/23--------", //网站列表的分类
   "houzhui": "---.html", //网站翻页链接的后缀
 
   "shifouercijiequ": "1", //截取的列表数组是否需要二次截取，0不需要，1需要
@@ -23,7 +23,7 @@
   "lianjiehou": "\"", //列表中资源的详情页跳转链接后关键词,截取的关键词有 " 的用 \ 进行转义
 
   //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
-  "fubiaotiqian": "item-note\">",
+  "fubiaotiqian": "item-douban\">",
   "fubiaotihou": "</div>",
 
 
