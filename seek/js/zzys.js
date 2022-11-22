@@ -1,7 +1,6 @@
 var rule={
  title:'子子影视',
  host:'https://www.ziziys.com',
- // homeUrl:'/',
  url:'/list/fyclass/page/fypage.html',
  searchUrl:'/vsearch/--.html?wd=**',
  searchable:2,//是否启用全局搜索,
