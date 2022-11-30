@@ -10,8 +10,8 @@ var rule={
         'User-Agent':'MOBILE_UA',
         // "Cookie": "searchneed=ok"
     },
-    class_name:'电影&动漫&国产剧&美剧&日韩剧',
-    class_url:'1&3&13&14&15',
+    class_name:'电影&美剧&国产剧&动漫&日韩剧',
+    class_url:'7&14&13&3&15',
     lazy:'',
     limit:6,
     推荐:'.module-items;.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
