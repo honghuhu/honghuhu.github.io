@@ -5,6 +5,7 @@
   "sites":[
     {"key":"drpy_js_酷云77","name":"🍁酷云77(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://honghuhu.github.io/seek/js/drpy.min.js","ext":"https://honghuhu.github.io/seek/js/77.js"},
     {"key":"drpy_js_yanetflix","name":"yanetflix(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://honghuhu.github.io/seek/js/drpy.min.js","ext":"https://honghuhu.github.io/seek/js/yanetflix.js"},
+    {"key":"drpy_js_fositv","name":"🚗fositv(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://honghuhu.github.io/seek/js/drpy.min.js","ext":"https://honghuhu.github.io/seek/js/fositv.js"},        
     {"key":"drpy_js_腾讯","name":"qq(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://honghuhu.github.io/seek/js/drpy.min.js","ext":"https://honghuhu.github.io/seek/js/q.js"},
     {"key":"drpy_js_优酷","name":"优酷(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://honghuhu.github.io/seek/js/drpy.min.js","ext":"https://honghuhu.github.io/seek/js/yk.js"},
     {"key":"csp_xp_wnvod","name":"👒万能影视","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/wnvod.png"},
