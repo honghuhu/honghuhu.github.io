@@ -98,7 +98,7 @@
     {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"🐠布雷蓝光","type":0,"url":"https://www.bulei.cc/bfq/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     // {"name":"🐠dsxys","type":0,"url":"https://dsxys.live/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
-    {"name":"keyu","type":1,"url":"http://newjiexi.gotka.top/keyu3.php?url=","ext":{"header":{"User-Agent":"okhttp/4.1.0"}}},
+    // {"name":"keyu","type":1,"url":"http://newjiexi.gotka.top/keyu3.php?url=","ext":{"header":{"User-Agent":"okhttp/4.1.0"}}},
     {"name":"懒懒2","type":1,"url":"http://lanlan.ckflv.cn/?url=","ext":{"header":{"User-Agent":"okhttp/4.1.0"}}},
     {"name":"rxjx","type":1,"url":"http://rxjx.kuanjv.com/allm3u8.php?url=","ext":{"header":{"User-Agent":"okhttp/4.1.0"}}},
     {"name":"🐶ok","type":0,"url":"https://okjx.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
