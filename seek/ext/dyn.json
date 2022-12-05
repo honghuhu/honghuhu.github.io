@@ -1,8 +1,9 @@
 {
     "author": "ajk",
     "ua": "",
+    // 永久导航网址 www.dianyingn.net
     // 首页地址 用于获取 分类和首页推荐
-    "homeUrl": "https://www.dianyingn.com",
+    "homeUrl": "https://www.dianyingn.cc",
     // 分类节点
 	//"cateNode": "//ul[@class='clearfix']//a[contains(@href,'/vod/type/')]",
     // 分类名
@@ -39,8 +40,8 @@
     "homeVodMarkR": "",
  // 分类模块 ================================================    
     // 分类页地址 {cateId} 分类id {catePg} 当前页
-    //https://www.dianyingn.com/vodshow/{cateId}--------{catePg}---.html
-    "cateUrl": "https://www.dianyingn.com/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
+    //https://www.dianyingn.cc/vodshow/{cateId}--------{catePg}---.html
+    "cateUrl": "https://www.dianyingn.cc/vodshow/{cateId}-{area}-{by}------{catePg}---{year}.html",
     // 同上面的homeVod字段 分类列表中的视频信息
     "cateVodNode": "//ul[contains(@class,'fed-list-info fed-part-rows')]/li",
     "cateVodName": "/a[contains(@class,'fed-list-title')]/text()",
@@ -50,7 +51,7 @@
     "cateVodMark": "//span[contains(@class,'fed-list-remarks')]/text()",
   // 详情模块 ================================================    
     // 详情页地址 用于获取详情页信息 及 播放列表和地址
-    "dtUrl": "https://www.dianyingn.com/voddetail/{vid}.html",
+    "dtUrl": "https://www.dianyingn.cc/voddetail/{vid}.html",
     // 详情节点
     "dtNode": "//body",
     // 视频名
@@ -98,12 +99,12 @@
     // 二次处理正则
     "dtUrlNameR": "",
     // 播放页面的地址 {playUrl} 对应上面 dtUrlId 获取到的地址
-    "playUrl": "https://www.dianyingn.com/vodplay/{playUrl}.html",
+    "playUrl": "https://www.dianyingn.cc/vodplay/{playUrl}.html",
     // 解析webview的user-agent
     "playUa": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
   // 搜索模块 ================================================         
     // 搜索地址
-  "searchUrl": "https://www.dianyingn.com/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
+  "searchUrl": "https://www.dianyingn.cc/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
   "scVodNode": "json:list",
   "scVodName": "name",
   "scVodId": "id",
