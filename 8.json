@@ -1,7 +1,7 @@
 {
   "spider":"https://cdn.nlark.com/yuque/0/2022/png/1682692/1669013508522-c0b141a0-6743-4dd2-9c28-d41836f5f182.png;md5;6D99C46DE900F7B85BBFA8CED2D780B0",
   "wallpaper":"http://api.muvip.cn/api/bing?rand=true&size=1920x1080",
-  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://notabug.org/xingyuan/tv/raw/main/live.txt"]}]}],
+  "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=http://101.34.67.237/txt/lives/tvlive.txt"]}]}],
   "sites":[
     {"key":"drpy_js_酷云77","name":"🍁酷云77(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"https://ghproxy.com/https://raw.githubusercontent.com/honghuhu/honghuhu.github.io/master/seek/js/drpy.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/honghuhu/honghuhu.github.io/master/seek/js/77.js"},
     {"key":"csp_Tkys","name":"🍬天空影视(sp)","type":3,"api":"csp_Tkys","searchable":1,"quickSearch":1,"filterable":1},
