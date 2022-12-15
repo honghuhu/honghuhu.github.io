@@ -1,6 +1,5 @@
 var rule = {
  title:'RP影视',
- // 地址永久发布页 https://rpkandy.vip/
  host:'https://mac.rp123.top', 
  url:'/vodshow/fyclass--hits------fypage---/',
  searchUrl:'/vodsearch/-------------/?wd=**',
