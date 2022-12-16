@@ -1,6 +1,7 @@
 var rule={
     title:'子子影视',
     host:'https://www.ziziys.com',
+    // homeUrl:'/',
     url:'/list/fyclass/page/fypage.html',
     searchUrl:'/vsearch/--.html?wd=**',
     searchable:2,//是否启用全局搜索,
@@ -10,13 +11,22 @@ var rule={
         'User-Agent':'MOBILE_UA',
         // "Cookie": "searchneed=ok"
     },
-    class_name:'电影&美剧&国产剧&动漫&日韩剧',
-    class_url:'7&14&13&3&15',
+    class_name:'电影&动漫&国产剧&美剧&日韩剧',
+    class_url:'1&3&13&14&15',
     lazy:'',
     limit:6,
-    推荐:'.module-items;.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
     double:true, // 推荐内容是否双层定位
+    // 推荐:'.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
+    推荐:'.module-items:eq(0);.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
     一级:'.module-item;a&&title;.lazyloaded&&data-src;.module-item-text&&Text;a&&href',
-    二级:{"title":"h1&&Text;.video-info-header&&Text","img":".lazyload&&data-src","desc":".video-info-items:eq(1)&&Text;.video-info-items:eq(2)&&Text;.video-info-items:eq(3)&&Text","content":".vod_content&&Text","tabs":".module-tab-item","lists":".sort-item:eq(#id) a"},
+    二级:{
+    	"title":"h1&&Text;.video-info-header&&Text",
+    	"img":".lazyload&&data-src",
+    	// "desc":".video-info-items:eq(1)&&Text;.video-info-items:eq(2)&&Text;.video-info-items:eq(3)&&Text",
+    	"desc":";;;.video-info-main .video-info-actor:eq(1)&&Text;.video-info-main .video-info-actor:eq(0)&&Text",
+    	"content":".vod_content&&Text",
+    	"tabs":".module-tab-item",
+    	"lists":".sort-item:eq(#id) a"
+	},
     搜索:'.module-items;.lazyload&&alt;.lazyload&&data-src;.tag-link&&Text;*',
 }
