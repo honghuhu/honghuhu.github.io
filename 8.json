@@ -6,7 +6,6 @@
     {"key":"drpy_js_酷云77","name":"🍁酷云77(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"./seek/js/lib/drpy2.min.js","ext":"./seek/js/77.js"},
     {"key":"csp_Tkys","name":"🌟天空影视(sp)","type":3,"api":"csp_Tkys","searchable":1,"quickSearch":1,"filterable":1},
     {"key":"drpy_js_nxys","name":"🚗诺讯影视(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"./seek/js/lib/drpy2.min.js","ext":"./seek/js/nxys.js"},
-    {"key":"drpy_js_kuaikan","name":"🚗快看(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"./seek/js/lib/drpy2.min.js","ext":"./seek/js/kuaikan.js"},
     {"key":"drpy_js_yanetflix","name":"🚗yanetflix(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"./seek/js/lib/drpy2.min.js","ext":"./seek/js/yanetflix.js"},
     {"key":"drpy_js_fositv","name":"🚗fositv(js)","type":3,"searchable":1,"quickSearch":1,"filterable":1,"api":"./seek/js/lib/drpy2.min.js","ext":"./seek/js/fositv.js"},        
     {"key":"csp_xp_wnvod","name":"👒万能影视","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":0,"ext":"./seek/ext/wnvod.png"},
