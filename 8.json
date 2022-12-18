@@ -110,6 +110,8 @@
   ],
   "parses":[
     {"name":"解析聚合","type":3,"url":"Demo"},
+    {"name":"Web聚合","type":3,"url":"Web"},
+    {"name":"🐠1080p.tv","type":0,"url":"https://jxcdn.80k.tv/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     {"name":"🐠布雷蓝光","type":0,"url":"https://www.bulei.cc/bfq/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     {"name":"🐠xmflv","type":0,"url":"https://jx.xmflv.cc/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
     {"name":"🦄aidouer","type":0,"url":"https://jx.aidouer.net/?url=","ext":{"header":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42"}}},
