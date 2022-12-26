@@ -66,7 +66,7 @@
     {"key":"csp_biubiu_哔滴","name":"🐳哔滴(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://honghuhu.github.io/seek/ext/bdys.png"},
     {"key":"csp_biubiu_abyy","name":"☃️AB影院(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/abyy.png"},
     {"key":"csp_biubiu_dmxq","name":"🔍️🍿大米星球(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/dmxq.png"},
-    {"key":"csp_biubiu_555电影","name":"😭555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/555dy.png"},
+    {"key":"csp_biubiu_555电影","name":"😭555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/555dy.json"},
     {"key":"csp_biubiu_宝仙HD","name":"👼宝仙(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/bxhd.png"},
     {"key":"csp_xbb_zbkyy","name":"🍀真不卡","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/zbk.png"},
     // {"key":"csp_xbb_sobods","name":"🍀真不卡2","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://honghuhu.github.io/seek/ext/zbk2.png"},
